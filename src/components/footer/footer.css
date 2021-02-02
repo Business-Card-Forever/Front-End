@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Gloria+Hallelujah&family=Grenze+Gotisch:wght@500&family=Open+Sans&family=Permanent+Marker&family=Satisfy&display=swap');
+
+.footer{
+    background-color: black;
+}
+
+.follow{
+    margin-top: 1%;
+}
+.social-media{
+        text-align: center;
+        font-size: 17px;
+        color: #F8D271;
+    
+}
+.social-media p{
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+    color: #F8D271;
+}
+
+a.social{
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+    font-size: 17px;
+    color: #F8D271;
+    
+}
+
+a.social:hover{
+    transform: translateY(-10px);
+    color: white;
+}
+
+a.facebook{
+    color: #F8D271;
+}
+a.twitter{
+    color: #F8D271;
+}
+
+a.instagram {
+    color: #F8D271;
+}
+a.pinterest{
+    color: #F8D271;
+}
+
+.div-2{
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+
+.div-2 p{
+    text-align: center;
+    font-size: 17px;
+    color: #F8D271;
+}
+.div-2 p.contact{
+    padding-top: 0.8%;
+    
+}
+.div-2 span{
+    padding-left: 5%;
+}
+
+p.rights{
+    font-family: sans-serif;
+    color: #F8D271;
+    font-size: 17px;
+    margin-top: 1%;
+}
+
+.span-col{
+    margin: 0% 1% 0% 1%;
+}

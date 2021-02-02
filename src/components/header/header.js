@@ -8,7 +8,7 @@ import Login from '../login/login';
 import SignUp from '../signup/signup';
 
 
-class header extends React.Component {
+class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -111,6 +111,6 @@ class header extends React.Component {
     }
 }
 
-export default header;
+export default Header;
 
 
