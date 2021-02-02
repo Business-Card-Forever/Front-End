@@ -2,6 +2,8 @@ import Header from './components/header/header'
 // import Login from './components/login/login';
 // import SignIn from './components/signin/signin';
 
+import Dasboard from "./components/dashboard/dashboard";
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
     <Header />
       {/* <Login/>
       <SignIn/> */}
+      {/* <Dasboard/> */}
 
     </div>
   );

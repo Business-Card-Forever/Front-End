@@ -1,0 +1,60 @@
+
+body{
+    background-image: url(https://monicabalut.files.wordpress.com/2010/02/gradient-mask2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.home{
+    margin-left: 36pc;
+    color: blanchedalmond;
+}
+
+figcaption{
+    margin-left: 3.5%;
+}
+
+.profilePic{
+    width: 10%;
+    border-radius: 100px;
+    margin: 4% 0% 0% 3%;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    float: right;
+    margin: 4%;
+}
+
+.b1 {
+flex: 1;
+border: 1px solid;
+margin: 4%;
+}
+
+@media (max-width: 768px) {
+.container4 {
+    flex-direction: column;
+
+}
+}
+
+.info{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin-top: -13%;
+    margin-bottom: 33%;
+    background-color: darkslategray;
+    width: 40%;
+    border-radius: 6%;
+    height: 329px;
+    margin-left: 26%;
+}
+
+.container2{
+    margin-right: 5%;
+}
+
