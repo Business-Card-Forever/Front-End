@@ -183,9 +183,6 @@ class Dashboard extends React.Component {
                         <h2 className="major"> Major: Software Development</h2>
                     </Modal.Body>
                 </Modal>
-
-
-
                 <Footer />
 
             </>

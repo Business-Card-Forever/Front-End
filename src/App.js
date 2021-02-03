@@ -19,8 +19,8 @@ function App() {
     {/* <Login/>
       <SignIn/> */}
        <RegistrationForm /> 
-      {/* <DashboardCompany/>
-      <Dashboard/> */}
+      {/* <Dashboard/>
+      <DashboardCompany/> */}
      
        <QR/> 
       <Features/>
