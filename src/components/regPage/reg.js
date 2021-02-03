@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from '../login/login';
 import SignUp from '../signup/signup';
 
-import VedioBG from '../main/main'
+// import VedioBG from '../main/main'
 import header from '../header/header'
 
 
