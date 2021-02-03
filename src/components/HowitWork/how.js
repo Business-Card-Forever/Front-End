@@ -1,9 +1,9 @@
 import React from "react";
-import './events.css';
+import './how.css';
 import how from '../../img/how.png'
 
 
-class Events extends React.Component {
+class How extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -30,4 +30,4 @@ class Events extends React.Component {
     }
 }
 
-export default Events;
+export default How;
