@@ -23,7 +23,6 @@ const routing = (
   <Router>
       <React.StrictMode>
           <Switch>
-
               <Route exact path="/" component={App} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/dashboard_c" component={Dashboard_c} />
