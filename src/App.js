@@ -6,6 +6,9 @@ import Dasboard from "./components/dashboard/dashboard";
 import Recent from "./components/recent/recent";
 import Footer from './components/footer/footer';
 import Events from './components/events/events';
+// import QR from './components/Qrcode/Qrcode';
+
+import RegistrationForm from './components/regPage/reg'
 
 function App() {
   return (
@@ -15,6 +18,8 @@ function App() {
       {/* <Login/>
       <SignIn/> */}
       {/* <Dasboard/> */}
+      {/* <RegistrationForm /> */}
+      {/* <QR/> */}
       <Features/>
       <Recent/>
       <Events/>
