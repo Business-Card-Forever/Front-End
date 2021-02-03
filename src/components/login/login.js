@@ -5,52 +5,39 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Login extends Component {
     state = {
-        credentials: { username: '', password: '' }
+        credentials: {username:'', password:''}
     }
-
-    login = event => {
-
-        fetch('http://127.0.0.1:8000/auth/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(this.state.credentials)
+    login = event =>{
+        fetch('https://e-bcard.herokuapp.com/auth/',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify(this.state.credentials)
         })
-            .then(data => data.json())
-            .then(
-                data => {
-                    this.props.userLogin(data.token)
-
-                }
-            ).catch(error => console.error("here", error))
-
+        .then(data =>data.json())
+        .then(
+            data => {
+                this.props.userLogin(data.token)
+            }
+        ).catch(error => console.error("here",error))
     }
-
-
-
-    register = event => {
-
-        fetch('http://127.0.0.1:8000/api/users/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(this.state.credentials)
+    register = event =>{
+        fetch('https://e-bcard.herokuapp.com/api/users/',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify(this.state.credentials)
         })
-            .then(data => data.json())
-            .then(
-                data => {
-                    console.log(data.token);
-
-                }
-            ).catch(error => console.error("here", error))
-
-
-
+        .then(data =>data.json())
+        .then(
+            data => {
+                console.log(data.token);
+            }
+        ).catch(error => console.error("here",error))
     }
-    inputChanged = event => {
+    inputChanged = event =>{
         const cred = this.state.credentials;
         cred[event.target.name] = event.target.value;
-        this.setState({ credentials: cred });
+        this.setState({credentials : cred});
     }
-
 
     render() {
         return (
@@ -58,8 +45,7 @@ class Login extends Component {
                 <Form>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label> Username: </Form.Label>
-                <Form.Control type="text" placeholder="username..." value={this.state.credentials.username} 
-                    onChange={this.inputChanged} />
+                <Form.Control type="text" placeholder="username..." onChange={this.inputChanged} />
                 <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
                 </Form.Text>
@@ -67,13 +53,13 @@ class Login extends Component {
 
             <Form.Group controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password..." value={this.state.credentials.password} 
-                    onChange={this.inputChanged} />
+                <Form.Control type="password" placeholder="Password..." onChange={this.inputChanged} />
             </Form.Group>
 
             <Button variant="primary" type="submit" onClick={this.register}> Sign Up </Button>
             <Button variant="primary" type="submit" onClick={this.login}> Login </Button>
             </Form>
+
 
             
 {/*                 

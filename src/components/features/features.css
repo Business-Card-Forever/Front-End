@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Audiowide&display=swap');
+
+.features-container{
+background-image: url('https://cdn.wallpapersafari.com/41/72/DqcEei.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.features {
+text-align: center;
+margin-top: 5%;
+
+}
+
+figcaption{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.our{
+font-size: 4.5rem;
+color: lightblue;
+text-shadow: 5px 5px 30px rgb(109, 121, 111);
+font-family: 'Acme', sans-serif;
+animation-name: repeat;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+font-weight: lighter;
+}
+
+@keyframes repeat {
+
+0% {color: lightblue; text-shadow: 5px 5px 30px lightblue;}
+20% {color: #45aaf2; text-shadow: 5px 5px 30px  #45aaf2;}
+40% {color: #2d98da; text-shadow: 5px 5px 30px  #2d98da;}
+60% {color: #4b7bec; text-shadow: 5px 5px 30px  #2d98da;}
+80% {color: #3867d6; text-shadow: 5px 5px 30px  #3867d6;}
+100% {color: lightblue; text-shadow: 5px 5px 30px  lightblue;}
+}
+
+.features2 {
+text-align: center;
+}
+
+/* ...................................... */
+
+
+/* Demo Box */
+.demo-container {
+display: flex;
+justify-content: space-between;
+width: 90%;
+height: auto;
+margin: 50px auto;
+}
+.demo-box {
+width: 270px;
+height: 270px;
+display: inline-block;
+border-radius: 12px;
+margin: 20px;
+}
+
+.demo-box {
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 4s ease-in-out infinite alternate;
+}
+
+#glow-blue {
+animation-name: glow-blue;
+}
+@keyframes glow-blue {
+from {
+    box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+}
+to {
+    box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+}
+}
+
+#glow-green {
+animation-name: glow-green;
+}
+@keyframes glow-green {
+from {
+    box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+}
+to {
+    box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+}
+}
+
+
+
+
+#glow-red {
+animation-name: glow-red;
+}
+@keyframes glow-red {
+    from {
+        box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+    }
+    to {
+        box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+    }
+    }
+
+#glow-pink {
+animation-name: glow-pink;
+}
+@keyframes glow-pink {
+    from {
+        box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+    }
+    to {
+        box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+    }
+    }
+
+#glow-yellow {
+animation-name: glow-yellow;
+}
+@keyframes glow-yellow {
+    from {
+        box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+    }
+    to {
+        box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+    }
+    }
+
+.second{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+
+/* .one:hover #glow-blue:hover{
+    width: 150px;
+    transition: 800ms;
+
+} */
+
+.empty{
+    /* margin-top: 5%; */
+    background-color: rgb(16, 13, 32);
+    /* height: 0.1px; */
+    
+}

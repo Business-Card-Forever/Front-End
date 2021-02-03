@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Audiowide&display=swap');
+
+.features-container2{
+background-image: url('../../img/recent.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.features {
+text-align: center;
+margin-top: 5%;
+
+}
+
+
+figure{
+    cursor:pointer;
+}
+
+.figcaption2{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.our{
+font-size: 4.5rem;
+color: lightblue;
+text-shadow: 5px 5px 30px rgb(109, 121, 111);
+font-family: 'Acme', sans-serif;
+animation-name: repeat2;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+font-weight: lighter;
+}
+
+@keyframes repeat2 {
+
+0% {color: #45aaf2; text-shadow: 5px 5px 30px lightblue;}
+20% {color: #45aaf2; text-shadow: 5px 5px 30px  #45aaf2;}
+40% {color: #45aaf2; text-shadow: 5px 5px 30px  #2d98da;}
+60% {color: #45aaf2; text-shadow: 5px 5px 30px  #2d98da;}
+80% {color: #45aaf2; text-shadow: 5px 5px 30px  #3867d6;}
+100% {color: #45aaf2; text-shadow: 5px 5px 30px  rgb(124, 171, 187);}
+}
+
+.features2 {
+text-align: center;
+}
+
+/* ...................................... */
+
+
+/* Demo Box */
+.demo-container {
+display: flex;
+justify-content: space-between;
+width: 90%;
+height: auto;
+margin: 50px auto;
+
+}
+
+.demo-box2 {
+width: 145px;
+height: 160px;
+display: inline-block;
+border-radius: 12px;
+margin: 20px;
+}
+
+.demo-box2 {
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 4s ease-in-out infinite alternate;
+}
+
+#glow-blue {
+animation-name: glow-blue;
+}
+@keyframes glow-blue {
+from {
+    box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+}
+to {
+    box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+}
+}
+
+#glow-green {
+animation-name: glow-green;
+}
+@keyframes glow-green {
+from {
+    box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+}
+to {
+    box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+}
+}
+
+
+
+
+#glow-red {
+animation-name: glow-red;
+}
+@keyframes glow-red {
+    from {
+        box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+    }
+    to {
+        box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+    }
+    }
+
+#glow-pink {
+animation-name: glow-pink;
+}
+@keyframes glow-pink {
+    from {
+        box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+    }
+    to {
+        box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+    }
+    }
+
+#glow-yellow {
+animation-name: glow-yellow;
+}
+@keyframes glow-yellow {
+    from {
+        box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
+    }
+    to {
+        box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
+    }
+    }
+
+.second2{
+    margin-left: 12%;
+    margin-right: 12%;
+    
+}
+
+.empty{
+    margin-top: 5%;
+    background-color: rgb(16, 13, 32);
+    height: 0.1px;
+}
+
+
+
+/* ----------------------------------------------- */
+
+
+
+
+
+.glow-on-hover {
+    border: honeydew 2px solid;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
