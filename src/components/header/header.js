@@ -70,11 +70,11 @@ class Header extends React.Component {
                     </Nav>
 
                     <Form className="loginBtn">
-                        <Button onClick={this.handleLogin} variant="outline-info">Login12</Button>
+                        <Button onClick={this.handleLogin} variant="outline-info">Login</Button>
                     </Form>
 
                     <Form className="signinBtn">
-                        <Button onClick={this.handleSignup} variant="outline-info">Sign Up12</Button>
+                        <Button onClick={this.handleSignup} variant="outline-info">Sign Up</Button>
                     </Form>
 
                 </Navbar>
@@ -85,12 +85,13 @@ class Header extends React.Component {
             
                     <Col className="zoom " xs={12} md={5} xl={5} lg={5}>
                         <div className='bgText'>
-                        <h1 className="text-center">E-BCard</h1>
-                        <h4 className="text-center" >One Business Card <br/>Updated, Accessible, Available  <br/> For Ever</h4>
+                        <h2 className="text-center h22">E-BCard</h2>
+                        <h4 className="text-center" > <span> One Business Card </span><br/>Updated, Accessible, Available  <br/> For Ever</h4>
                         </div>
                     </Col>
-                
 
+
+                
                 <Modal show={this.state.loginBtn} centered className="loginModal">
                     <Modal.Header closeButton onClick={this.handleLoginClose}>
                         <Modal.Title id="example-modal-sizes-title-lg" className='modalTitle'> Login </Modal.Title>
