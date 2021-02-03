@@ -20,27 +20,27 @@ import SignUp from './components/signup/signup';
 
 
 const routing = (
-  <Router>
-      <React.StrictMode>
-          <Switch>
+    <Router>
+        <React.StrictMode>
+            <Switch>
 
-              <Route exact path="/" component={App} />
-              <Route exact path="/dashboard" component={Dashboard} />
-              <Route exact path="/dashboard_c" component={Dashboard_c} />
-              <Route exact path="/events" component={Events} />
-              <Route exact path="/features" component={Features} />
-              <Route exact path="/footer" component={Footer} />
-              <Route exact path="/header" component={Header} />
-              <Route exact path="/qrcode" component={Qrcode} />
-              <Route exact path="/main" component={Main} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/recent" component={Recent} />
-              <Route exact path="/signup" component={SignUp} />                  
-          </Switch>
-          
-          
-      </React.StrictMode>
-  </Router>
+                <Route exact path="/" component={App} />
+                <Route exact path="/dashboard" component={Dashboard} />
+                <Route exact path="/dashboard_c" component={Dashboard_c} />
+                <Route exact path="/events" component={Events} />
+                <Route exact path="/features" component={Features} />
+                <Route exact path="/footer" component={Footer} />
+                <Route exact path="/header" component={Header} />
+                <Route exact path="/qrcode" component={Qrcode} />
+                <Route exact path="/main" component={Main} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/recent" component={Recent} />
+                <Route exact path="/signup" component={SignUp} />                  
+            </Switch>
+            
+            
+        </React.StrictMode>
+    </Router>
 );
 
 ReactDOM.render(routing, document.getElementById('root'));
