@@ -70,11 +70,11 @@ class Header extends React.Component {
                     </Nav>
 
                     <Form className="loginBtn">
-                        <Button onClick={this.handleLogin} variant="outline-info">Login</Button>
+                        <Button onClick={this.handleLogin} variant="outline-info">Login12</Button>
                     </Form>
 
                     <Form className="signinBtn">
-                        <Button onClick={this.handleSignup} variant="outline-info">Sign Up</Button>
+                        <Button onClick={this.handleSignup} variant="outline-info">Sign Up12</Button>
                     </Form>
 
                 </Navbar>
