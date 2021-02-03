@@ -1,60 +1,73 @@
 
-.dash-container{
-    background-image: url(https://monicabalut.files.wordpress.com/2010/02/gradient-mask2.png);
+body{
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-color: white;
 }
 .home{
-    margin-left: 36pc;
-    color: blanchedalmond;
+    color: white;
 }
 
 figcaption{
-    margin-left: 3.5%;
+
 }
 
 .profilePic{
-    width: 10%;
-    border-radius: 100px;
-    margin: 4% 0% 0% 3%;
+    /* padding-left: 100px; */
+
 }
 
 .container4 {
-    display: flex;
-    flex-direction: column;
+
     width: 15%;
-    float: right;
-    margin: 4%;
+    float: left;
+    ;
+    
 }
 
 .b1 {
-flex: 1;
-border: 1px solid;
-margin: 4%;
-}
+width:200px;
+margin-left:150;
+/* margin-left: 500px; */
+margin-bottom: 20px;
+display: block;
 
-@media (max-width: 768px) {
-.container4 {
-    flex-direction: column;
 
 }
+
+.main-con{
+    margin-left: 4%;
+    margin-right: 10%;
+
 }
 
 .info{
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    margin-top: -13%;
-    margin-bottom: 33%;
-    background-color: darkslategray;
-    width: 40%;
+
+    width: 50%;
     border-radius: 6%;
-    height: 329px;
-    margin-left: 26%;
+    height: 400px;
+    padding-top: 100px;
+    padding:50px;
+    display: inline-block;
 }
 
 .container2{
-    margin-right: 5%;
+    padding: 80px;
+    display: block;
 }
-
+.l{
+    font-size: 20px;
+    display: inline-block;
+    color: rgb(31, 28, 28);
+    font-weight: 400;
+    padding-left: 15px;
+    width: 200px;
+}
+.f{
+    margin: 500px;
+}
+.rows{
+    margin: 10px;
+    width:500px;
+    outline: white;
+}
