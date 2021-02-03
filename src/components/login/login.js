@@ -48,19 +48,20 @@ class Login extends Component {
                 <Form>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label> Username: </Form.Label>
-                <Form.Control type="text" name="username" placeholder="username..." onChange={this.inputChanged} />
-                <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-                </Form.Text>
+                <Form.Control type="text" name="username" placeholder="Enter Your Username" onChange={this.inputChanged} />
+
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" name="password" placeholder="Password..." onChange={this.inputChanged} />
+                <Form.Control type="password" name="password" placeholder="Enter Your Password" onChange={this.inputChanged} />
+                <Form.Text className="text-muted">
+                Recommended 8 characters.
+                </Form.Text>
             </Form.Group>
 
-            <Button variant="primary" type="submit" onClick={this.register}> Sign Up </Button>
-            <Button variant="success" type="submit" onClick={this.login}> Login </Button>
+            <Button variant="primary" type="submit" onClick={this.register}> Login</Button>
+            {/* <Button variant="success" type="submit" onClick={this.login}> Login </Button> */}
             </Form>
 
 

@@ -7,15 +7,15 @@ function signIn(props) {
 
     return (
 
-        <Form>
+            <Form>
                 <Form.Row>
                 <Form.Group as={Col} controlId="formGridEmail">
-                    <Form.Label>First Name</Form.Label><br/>
+                    <Form.Label>User Name</Form.Label><br/>
                     <Form.Control type="text" placeholder="Enter Your First Name" />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridPassword">
-                    <Form.Label>Last Name</Form.Label>
+                    <Form.Label>Company Name</Form.Label>
                     <Form.Control type="text" placeholder="Last Name" />
                 </Form.Group>
             </Form.Row>
@@ -67,7 +67,7 @@ function signIn(props) {
 
             <Button variant="primary" type="submit">
                 Submit
-  </Button>
+            </Button>
         </Form>
     );
 

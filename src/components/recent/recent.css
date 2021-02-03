@@ -13,6 +13,12 @@ margin-top: 5%;
 
 }
 
+.one{
+border-radius:12px;
+
+}
+
+
 
 .fig1{
     cursor:pointer;
@@ -55,7 +61,6 @@ text-align: center;
 /* ...................................... */
 
 
-/* Demo Box */
 .demo-container {
 display: flex;
 justify-content: space-between;
