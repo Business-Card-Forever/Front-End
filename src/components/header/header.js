@@ -14,6 +14,7 @@ class Header extends React.Component {
         this.state = {
             loginBtn: false,
             SignUpBtn: false,
+            token:'',
         }
     }
 
@@ -31,6 +32,12 @@ class Header extends React.Component {
 
     handleLoginClose = () => {
         this.setState({ loginBtn: false });
+    }
+
+    userLogin = (tok) =>{
+        this.setState({token:tok})
+        console.log(this.state.token);
+        
     }
 
     render() {
@@ -90,7 +97,7 @@ class Header extends React.Component {
                     </Modal.Header>
 
                     <Modal.Body>
-                        <Login />
+                        <Login userLogin={this.userLogin} />
                     </Modal.Body>
                 </Modal>
 
@@ -104,6 +111,8 @@ class Header extends React.Component {
                         <SignUp />
                     </Modal.Body>
                 </Modal>
+                
+                <div className="dash-emptyDiv"></div>
 
             </div>
         )

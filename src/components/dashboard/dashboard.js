@@ -29,7 +29,7 @@ class Dashboard extends React.Component {
     render() {
 
         return (
-            <>
+            <div className='dash-container'>
                 <Navbar bg="dark" variant="dark">
                     <Dropdown >
                         <Dropdown.Toggle variant="failed" id="dropdown-basic">
@@ -121,10 +121,10 @@ class Dashboard extends React.Component {
                     </Modal>
 
 
-
                     <Footer />
 
-            </>
+
+            </div>
         )
     }
 }
