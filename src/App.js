@@ -7,6 +7,8 @@ import Recent from "./components/recent/recent";
 import Footer from './components/footer/footer';
 import Events from './components/events/events';
 
+import RegistrationForm from './components/regPage/reg'
+
 function App() {
   return (
     <div className="App">
@@ -15,6 +17,7 @@ function App() {
       {/* <Login/>
       <SignIn/> */}
       {/* <Dasboard/> */}
+      {/* <RegistrationForm /> */}
       <Features/>
       <Recent/>
       <Events/>
