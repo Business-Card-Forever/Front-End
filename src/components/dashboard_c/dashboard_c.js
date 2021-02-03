@@ -1,5 +1,9 @@
 import React from "react";
 import './dashboard_c.css';
+import placeholder from "../../img/placeholder.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from "react-bootstrap";
+import { ButtonGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faPinterest, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -7,10 +11,7 @@ import { Navbar, Nav, Button, Form, Modal, Col, Row, Dropdown } from 'react-boot
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Footer from '../footer/footer';
-
-
-
-class Dashboard extends React.Component {
+class DashboardCompany extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -30,7 +31,7 @@ class Dashboard extends React.Component {
 
         return (
             <>
-                <Navbar bg="dark" variant="dark">
+                <Navbar bg="dark" variant="dark" >
                     <Dropdown >
                         <Dropdown.Toggle variant="failed" id="dropdown-basic">
                             <img className="user-img-drop ayKelme" alt="profilePic" src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png' width="50px" />
@@ -52,81 +53,136 @@ class Dashboard extends React.Component {
                         </Dropdown.Menu>
                     </Dropdown>
 
-                    {/* <Nav className="mr-auto"> */}
-                    <div className="home">
-                        <h1>E-BCard</h1>
-                    </div>
-                    {/* </Nav> */}
+                    <Nav className="mr-auto">
+                        <div className="home">
+                            <h1 style={{ marginLeft: '200' }}>E-BCard</h1>
+                        </div>
+                    </Nav>
+
                 </Navbar>
 
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="container1" style={{ paddingTop: 50 }}>
+                                <figure>
+                                    <img className="profilePic" src={placeholder} alt='image' width='230' />
+                                    <figcaption style={{ paddingTop: 50 }} >
+                                        <Button className='b1'> Change Picture </Button>
+                                    <Button className='b1' variant="success">Create Events</Button>
+                               
+                               
+
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </Col>
+
+                        <Col xs={4}>
+                            <Form style={{ marginTop: 50 ,marginLeft:20}} >
+                                <Form.Row>
+                                    <label className='l'> Company Name </label>
+                                </Form.Row>
+                                <Form.Row>
+
+                                    <Form.Control placeholder=" ASAC" className='rows' readOnly />
+
+                                </Form.Row>
+
+                                <Form.Row>
+                                    <label className='l' >  Company Address </label>
+                                </Form.Row>
+                                <Form.Row>
+
+                                    <Form.Control placeholder=" amman-jordan" className='rows' readOnly />
+
+                                </Form.Row>
+
+                                <Form.Row>
+                                    <label className='l'> Industry </label>
+                                </Form.Row>
+                                <Form.Row>
+
+                                    <Form.Control placeholder="Information Technology" className='rows' readOnly />
+
+                                </Form.Row>
+                            </Form>
+                            <Form  style={{ marginLeft:20}} >
+
+                                <Form.Row>
+                                    <label className='l'> Email </label>
+                                </Form.Row>
+                                <Form.Row>
+
+                                    <Form.Control placeholder="asac.ltuc@gmail.com" className='rows' readOnly />
+
+                                </Form.Row>
+                                <Form.Row>
+                                    <label className='l' > Phone </label>
+                                </Form.Row>
+                                <Form.Row>
+
+                                    <Form.Control placeholder="+962-78202024" className='rows' readOnly />
+
+                                </Form.Row>
+
+                                
+                            </Form>
+                        </Col>
+                        <Col xs={5}>
+
+                        </Col>
+
+                    </Row>
+                    
+                </Container>
 
 
-                <div className="container4">
-                    <Button className='b1' onClick={this.handleModal}> View Portfolio </Button>
-                    <Button className='b1'> My Collection </Button>
-                    <Button className='b1'> Events </Button>
-                    <Button className='b1'> My QR Code </Button>
+                <div className='main-con'>
+
+                    <Container style={{ marginBottom: 100 }}>
+                        <Row>
+                            <Col xs={3}>
+
+
+
+
+                            </Col>
+                            <Col xs={6}>
+                            </Col>
+                            <Col>
+                            </Col>
+                        </Row>
+
+                    </Container>
+
+
+                    {/* <video src='../../img/bgx.mp4' width="600" height="300" controls="controls" autoplay="true" /> */}
 
                 </div>
-
-                <div className="container1">
-                    <figure>
+                <Modal show={this.state.modalBtn} centered className="modal">
+                    <Modal.Header closeButton onClick={this.handleModalClose}>
+                        <Modal.Title id="example-modal-sizes-title-lg" className='modalTitle'> Profile </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
                         <img className="profilePic" src="http://assets.stickpng.com/thumbs/585e4beacb11b227491c3399.png" />
-                        <figcaption>
-                            <Button> Change Picture </Button>
-                        </figcaption>
-                    </figure>
-                </div>
-
-
-                <div className="info">
-                    <div className="container2">
-                        <label> Full Name: </label> <br />
-                        <input className="fullName" value='Omar Zain' /><br />
-                        <label> Birthday: </label> <br />
-                        <input className="birthdate" value='20 Jan 1995.com' /><br />
-                        <label> City: </label> <br />
-                        <input className="city" value='Amman' /><br />
-                    </div>
-
-                    <div className="container3">
-                        <label> Email: </label> <br />
-                        <input className="email" value='123@gmail.com' /><br />
-                        <label> Phone: </label> <br />
-                        <input className="phone" value='+962-788703716' /><br />
-                        <label> major: </label> <br />
-                        <input className="major" value='Software Development' /><br />
-                    </div>
-                </div>
+                        <h2 className="fullName"> Full Name: Omar Zain </h2>
+                        <h2 className="birthdate">Birthday: 20 Jan 1995 </h2>
+                        <h2 className="city"> City: Amman</h2>
+                        <h2 className="email">Email: 123@gmail.com</h2>
+                        <h2 className="phone">Phone: +962-7985654520</h2>
+                        <h2 className="major"> Major: Software Development</h2>
+                    </Modal.Body>
+                </Modal>
 
 
 
-
-                {/* <video src='../../img/bgx.mp4' width="600" height="300" controls="controls" autoplay="true" /> */}
-
-
-                    <Modal show={this.state.modalBtn} centered className="modal">
-                        <Modal.Header closeButton onClick={this.handleModalClose}>
-                            <Modal.Title id="example-modal-sizes-title-lg" className='modalTitle'> Profile </Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <img className="profilePic" src="http://assets.stickpng.com/thumbs/585e4beacb11b227491c3399.png" />
-                            <h2 className="fullName"> Full Name: Omar Zain </h2>
-                            <h2 className="birthdate">Birthday: 20 Jan 1995 </h2>
-                            <h2 className="city"> City: Amman</h2>
-                            <h2 className="email">Email: 123@gmail.com</h2>
-                            <h2 className="phone">Phone: +962-7985654520</h2>
-                            <h2 className="major"> Major: Software Development</h2>
-                        </Modal.Body>
-                    </Modal>
-
-
-
-                    <Footer />
+                <Footer />
 
             </>
+
         )
     }
 }
 
-export default Dashboard;
+export default DashboardCompany;

@@ -2,11 +2,12 @@ import Header from './components/header/header'
 // import Login from './components/login/login';
 // import SignIn from './components/signin/signin';
 import Features from './components/features/features';
-import Dasboard from "./components/dashboard/dashboard";
+import Dashboard from "./components/dashboard/dashboard";
+import DashboardCompany from './components/dashboard_c/dashboard_c'
 import Recent from "./components/recent/recent";
 import Footer from './components/footer/footer';
 import Events from './components/events/events';
-// import QR from './components/Qrcode/Qrcode';
+import QR from './components/Qrcode/Qrcode';
 
 import RegistrationForm from './components/regPage/reg'
 
@@ -15,11 +16,13 @@ function App() {
     <div className="App">
 
     <Header />
-      {/* <Login/>
+    {/* <Login/>
       <SignIn/> */}
-      {/* <Dasboard/> */}
-      {/* <RegistrationForm /> */}
-      {/* <QR/> */}
+       <RegistrationForm /> 
+      {/* <DashboardCompany/>
+      <Dashboard/> */}
+     
+       <QR/> 
       <Features/>
       <Recent/>
       <Events/>
@@ -29,3 +32,4 @@ function App() {
 }
 
 export default App;
+
