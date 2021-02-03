@@ -34,7 +34,7 @@ class Recent extends React.Component {
                         </div>
 
                         <div class="demo-box2 two" id="glow-green">
-                            <figure>
+                            <figure className='fig1'>
                                 <img src={portfolio} />
                                 <figcaption className='figcaption2'><br></br>
                                 Aghyad Albalkhi
@@ -44,7 +44,7 @@ class Recent extends React.Component {
                         </div>
 
                         <div class="demo-box2 three" id="glow-red">
-                            <figure>
+                            <figure className='fig1'>
                                 <img src={portfolio} />
                                 <figcaption className='figcaption2'><br></br>
                                 Momayaz Aldoos
@@ -55,7 +55,7 @@ class Recent extends React.Component {
 
 
                     <div class="demo-box2 second2 four" id="glow-pink">
-                        <figure>
+                        <figure className='fig1'>
                             <img src={portfolio} />
                             <figcaption className='figcaption2'><br></br>
                             Dana Kiswani
@@ -67,7 +67,7 @@ class Recent extends React.Component {
                     <button class="glow-on-hover" type="button">Create Your Own</button>
 
                     <div class="demo-box2 second2 five" id="glow-yellow">
-                        <figure>
+                        <figure className='fig1'>
                             <img src={portfolio} />
                             <figcaption className='figcaption2'><br></br>
                             Omar Zain

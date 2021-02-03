@@ -36,7 +36,7 @@ class Features extends React.Component {
 
                         <div class="demo-box two" id="glow-green">
                             <figure>
-                                <img src={py2} />
+                                <img className='one' src={py2} />
                                 <figcaption><br></br>
                                 Create Your Contact List Online
                                 </figcaption>
@@ -46,7 +46,7 @@ class Features extends React.Component {
 
                         <div class="demo-box three" id="glow-red">
                             <figure>
-                                <img src={py3} />
+                                <img className='one' src={py3} />
                                 <figcaption><br></br>
                                 Show Upcoming Events
                                 </figcaption>
@@ -56,7 +56,7 @@ class Features extends React.Component {
 
                     <div class="demo-box second four" id="glow-pink">
                         <figure>
-                            <img src={py4} />
+                            <img className='one' src={py4} />
                             <figcaption><br></br>
                             Accessible, Available Everywhere
                             </figcaption>
@@ -66,7 +66,7 @@ class Features extends React.Component {
 
                     <div class="demo-box second five" id="glow-yellow">
                         <figure>
-                            <img src={py5} />
+                            <img className='one' src={py5} />
                             <figcaption><br></br>
                             Updated Forever
                             </figcaption>
