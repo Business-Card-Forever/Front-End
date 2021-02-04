@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 import { ButtonGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faPinterest, faYoutube } from '@fortawesome/free-brands-svg-icons';
-
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, Button, Form, Modal, Col, Row, Dropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -71,7 +71,13 @@ class Dashboard extends React.Component {
                                         <Button className='b1'> Change Picture </Button>
 
                                         <Button className='b1' variant="primary" onClick={this.handleModal}>Portfolio</Button>
+                                        
+                                        <Link to="/qrcode">
+                                        
                                         <Button className='b1' variant="success">QR Code</Button>
+                                    
+                                        </Link>
+
                                         <Button className='b1' variant="info">Connection list</Button>
 
 

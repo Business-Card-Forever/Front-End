@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^12.6.2",
     "bootstrap": "^4.6.0",
     "mdbreact": "^5.0.1",
+    "node-sass": "^4.14.1",
     "qrcode": "^1.4.4",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-dev-utils": "^11.0.2"
   }
 }

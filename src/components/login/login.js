@@ -1,30 +1,119 @@
+// import React, { Component } from "react";
+// // import './login.css';
+// import { Button, Form } from 'react-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+// class Login extends Component {
+//     state = {
+//         credentials: {username:'', password:''}
+//     }
+//     login = event =>{
+
+//         let user_object = this.state.credentials
+
+//         fetch('http://127.0.0.1:8000/auth/',{
+//             method:'POST',
+//             headers:{'Content-Type': 'application/json'},
+//             body:JSON.stringify(user_object)
+//         })
+//         .then(data =>data.json())
+//         .then(
+//             data => {
+//                 alert(data.token)
+//                 this.props.userLogin(data.token)
+//             }
+//         ).catch(error => console.log(error))
+
+//     }
+//     register = event =>{
+//         console.log(this.state.credentials.username)
+//         console.log(this.state.credentials.password)
+//         fetch('http://127.0.0.1:8000/api/users/',{
+//             method:'POST',
+//             headers:{'Content-Type':'application/json'},
+//             body:JSON.stringify(this.state.credentials)
+//         })
+//         .then(data =>data.json())
+//         .then(
+//             data => {
+//                 console.log(data.token);
+//             }
+//         ).catch(error => console.error("here",error))
+//     }
+//     inputChanged = event =>{
+//         const cred = this.state.credentials;
+//         cred[event.target.name] = event.target.value;
+//         this.setState({credentials : cred});
+//     }
+
+//     render() {
+//         return (
+//             <div id="container">
+//                 <Form>
+//             <Form.Group controlId="formBasicEmail">
+//                 <Form.Label> Username: </Form.Label>
+//                 <Form.Control type="text" name="username" placeholder="Enter Your Username" onChange={this.inputChanged} />
+
+//             </Form.Group>
+
+//             <Form.Group controlId="formBasicPassword">
+//                 <Form.Label>Password</Form.Label>
+//                 <Form.Control type="password" name="password" placeholder="Enter Your Password" onChange={this.inputChanged} />
+//                 <Form.Text className="text-muted">
+//                 Recommended 8 characters.
+//                 </Form.Text>
+//             </Form.Group>
+
+//             <Button variant="primary" type="submit" onClick={this.login}> Login</Button>
+//             {/* <Button variant="success" type="submit" onClick={this.login}> Login </Button> */}
+//             </Form>
+
+
+            
+// {/*                 
+//             <div>
+//             <nav />
+//             </div>
+//                 <h1 > Login </h1>
+//                 <lable>
+//                     Username: 
+//                     <br/><input type="text" name="username"
+//                     value={this.state.credentials.username} 
+//                     onChange={this.inputChanged}/>
+//                 </lable>
+//                 <br/>
+//                 <lable>
+//                     Email : 
+//                     <input type="password" name="password"
+//                     value={this.state.credentials.password} 
+//                     onChange={this.inputChanged}/>
+//                 </lable><br/>
+
+//                 <button onClick={this.login}>Login</button>
+//                 <button onClick={this.register}>Register</button> */}
+//             </div>
+//         );
+//     }
+// }
+
+// export default Login;
+
+
+
+
 import React, { Component } from "react";
-// import './login.css';
-import { Button, Form } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Redirect } from "react-router-dom";
+
 
 class Login extends Component {
     state = {
-        credentials: {username:'', password:''}
+        credentials: {username:'', password:''},
+        redirect: null
     }
+
     login = event =>{
-        console.log(this.state.credentials.username)
-        console.log(this.state.credentials.password)
-        fetch('https://e-bcard.herokuapp.com/auth/',{
-            method:'POST',
-            headers:{'Content-Type':'application/json'},
-            body:JSON.stringify(this.state.credentials)
-        })
-        .then(data =>data.json())
-        .then(
-            data => {
-                console.log(data.token)
-                this.props.userLogin(data.token)
-            }
-        ).catch(error => console.error("here",error))
-    }
-    register = event =>{
-        fetch('https://e-bcard.herokuapp.com/api/users/',{
+
+        fetch('http://127.0.0.1:8000/auth/',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(this.state.credentials)
@@ -33,8 +122,42 @@ class Login extends Component {
         .then(
             data => {
                 console.log(data.token);
+                this.props.userLogin(data.token)
+                if(data.token !==undefined){
+                    localStorage.setItem('access_token', data.token);
+                    // localStorage.getItem('access_token');
+                    this.setState({ redirect: "/dashboard" });
+                    localStorage.setItem('user_id', 'https://web.facebook.com/aghyadalbalkhi/');
+                    
+                }
+
+
+            }
+        ).catch(error => console.log("here",error))
+    
+    }
+
+
+
+    register = event =>{
+        console.log(this.state.credentials.username)
+        console.log(this.state.credentials.password)
+        fetch('http://127.0.0.1:8000/api/users/',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify(this.state.credentials)
+        })
+        .then(data =>data.json())
+        .then(
+            data => {
+                alert('User Created')
+                console.log(data.token);
+
             }
         ).catch(error => console.error("here",error))
+
+
+
     }
     inputChanged = event =>{
         const cred = this.state.credentials;
@@ -42,51 +165,31 @@ class Login extends Component {
         this.setState({credentials : cred});
     }
 
+
     render() {
+        if (this.state.redirect) {
+            console.log(this.state.redirect)
+            return <Redirect to={this.state.redirect} />
+        }
         return (
-            <div id="container">
-                <Form>
-            <Form.Group controlId="formBasicEmail">
-                <Form.Label> Username: </Form.Label>
-                <Form.Control type="text" name="username" placeholder="Enter Your Username" onChange={this.inputChanged} />
-
-            </Form.Group>
-
-            <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" name="password" placeholder="Enter Your Password" onChange={this.inputChanged} />
-                <Form.Text className="text-muted">
-                Recommended 8 characters.
-                </Form.Text>
-            </Form.Group>
-
-            <Button variant="primary" type="submit" onClick={this.register}> Login</Button>
-            {/* <Button variant="success" type="submit" onClick={this.login}> Login </Button> */}
-            </Form>
-
-
-            
-{/*                 
             <div>
-            <nav />
-            </div>
-                <h1 > Login </h1>
+                <h1> login user form</h1>
                 <lable>
-                    Username: 
-                    <br/><input type="text" name="username"
+                    Username:
+                    <input type="text" name="username"
                     value={this.state.credentials.username} 
                     onChange={this.inputChanged}/>
                 </lable>
                 <br/>
                 <lable>
-                    Email : 
+                    Password : 
                     <input type="password" name="password"
                     value={this.state.credentials.password} 
                     onChange={this.inputChanged}/>
-                </lable><br/>
-
+                </lable>
+                <br/>
                 <button onClick={this.login}>Login</button>
-                <button onClick={this.register}>Register</button> */}
+                <button onClick={this.register}>Register</button>
             </div>
         );
     }
