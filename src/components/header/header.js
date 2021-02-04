@@ -65,7 +65,7 @@ class Header extends React.Component {
 
                     <Nav className="mr-auto">
                         <Nav.Link style={homeStyle} href="/">Home</Nav.Link>
-                        <Nav.Link style={style} href="/">About Us</Nav.Link>
+                        <Nav.Link style={style} href="/aboutus">About Us</Nav.Link>
                         <Nav.Link style={style} href="/">Events</Nav.Link>
                     </Nav>
 
