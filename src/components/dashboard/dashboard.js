@@ -158,10 +158,6 @@ class Dashboard extends React.Component {
                     <Container style={{ marginBottom: 100 }}>
                         <Row>
                             <Col xs={3}>
-
-
-
-
                             </Col>
                             <Col xs={6}>
                             </Col>
