@@ -14,7 +14,9 @@ import Main from './components/main/main';
 import Login from './components/login/login';
 import Recent from './components/recent/recent';
 import SignUp from './components/signup/signup';
+import RegPage from './components/regPage/reg';
 import About from './components/Aboutus/aboutus';
+
 
 
 
@@ -37,6 +39,7 @@ const routing = (
             <Route exact path="/recent" component={Recent} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/aboutus" component={About} />  
+            <Route exact path="/regpage" component={RegPage} /> 
         </Switch>
         
         
