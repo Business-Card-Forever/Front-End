@@ -1,8 +1,8 @@
-body{
+/* body{
     background-image: url('https://cdn.wallpapersafari.com/41/72/DqcEei.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .container{
     display: flex;

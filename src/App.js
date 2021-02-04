@@ -11,12 +11,16 @@ import QR from './components/Qrcode/Qrcode';
 import PortfoiRege   from "./components/PortfoiRege/PortfoiRege";
 import RegistrationForm from './components/regPage/reg'
 import About from './components/Aboutus/aboutus';
+import UserForm from './components/UserForm/UserForm';
+
 
 function App() {
   return (
+    <>
     <div className="App">
   
     </div>
+    </>
   );
 }
 
