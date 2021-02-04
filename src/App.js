@@ -21,7 +21,6 @@ function App() {
        {/* <RegistrationForm />  */}
       {/* <Dashboard/>
       <DashboardCompany/> */}
-     
       {/* <QR/>  */}
       <Features/>
       <Recent/>
