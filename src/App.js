@@ -8,25 +8,30 @@ import Recent from "./components/recent/recent";
 import Footer from './components/footer/footer';
 import How from './components/HowitWork/how';
 import QR from './components/Qrcode/Qrcode';
-
+import PortfoiRege   from "./components/PortfoiRege/PortfoiRege";
 import RegistrationForm from './components/regPage/reg'
 
 function App() {
   return (
     <div className="App">
 
-    <Header />
+    {/* <Header /> */}
     {/* <Login/>
       <SignIn/> */}
        {/* <RegistrationForm />  */}
       {/* <Dashboard/>
       <DashboardCompany/> */}
-     
+      {/* <Dashboard/>
+
+     <DashboardCompany/> */}
+     <PortfoiRege/>
+     <DashboardCompany/>
+     <Dashboard/>
       {/* <QR/>  */}
-      <Features/>
+      {/* <Features/>
       <Recent/>
       <How/>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

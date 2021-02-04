@@ -6,16 +6,9 @@ body{
 }
 .home{
     color: white;
+    margin-left: 550px;
 }
 
-figcaption{
-
-}
-
-.profilePic{
-    /* padding-left: 100px; */
-
-}
 
 .container4 {
 
@@ -27,9 +20,8 @@ figcaption{
 
 .b1 {
 width:200px;
-margin-left:150;
-/* margin-left: 500px; */
-margin-bottom: 20px;
+margin-left:100;
+margin-bottom: 15px;
 display: block;
 
 
