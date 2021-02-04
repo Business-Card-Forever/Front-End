@@ -15,33 +15,36 @@ import Login from './components/login/login';
 import Recent from './components/recent/recent';
 import SignUp from './components/signup/signup';
 import RegPage from './components/regPage/reg';
+import About from './components/Aboutus/aboutus';
 
 
 
 
 
 const routing = (
-    <Router>
-        <React.StrictMode>
-            <Switch>
-                <Route exact path="/" component={App} />
-                <Route exact path="/dashboard" component={Dashboard} />
-                <Route exact path="/dashboard_c" component={Dashboard_c} />
-                <Route exact path="/how" component={How} />
-                <Route exact path="/features" component={Features} />
-                <Route exact path="/footer" component={Footer} />
-                <Route exact path="/header" component={Header} />
-                <Route exact path="/qrcode" component={Qrcode} />
-                <Route exact path="/main" component={Main} />
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/recent" component={Recent} />
-                <Route exact path="/signup" component={SignUp} />
-                <Route exact path="/regpage" component={RegPage} />                   
-            </Switch>
-            
-            
-        </React.StrictMode>
-    </Router>
+<Router>
+    <React.StrictMode>
+        <Switch>
+
+            <Route exact path="/" component={App} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/dashboard_c" component={Dashboard_c} />
+            <Route exact path="/how" component={How} />
+            <Route exact path="/features" component={Features} />
+            <Route exact path="/footer" component={Footer} />
+            <Route exact path="/header" component={Header} />
+            <Route exact path="/qrcode" component={Qrcode} />
+            <Route exact path="/main" component={Main} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/recent" component={Recent} />
+            <Route exact path="/signup" component={SignUp} />
+            <Route exact path="/aboutus" component={About} />  
+            <Route exact path="/regpage" component={RegPage} /> 
+        </Switch>
+        
+        
+    </React.StrictMode>
+</Router>
 );
 
 ReactDOM.render(routing, document.getElementById('root'));

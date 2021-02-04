@@ -1,0 +1,202 @@
+
+html {
+scroll-behavior: smooth;
+overflow-x: hidden;
+
+}
+
+
+
+.figure1{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 4%;
+}
+
+.figure2{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+// margin: 6%;
+}
+
+
+.bigfigure{
+margin-left: -11%;
+animation: XX 3s ;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190623/ourmid/pngtree-blue-geometric-business-card-background-image_239795.jpg);
+// background-position:top;
+background-repeat:no-repeat;
+background-size: 100%;
+
+}
+
+
+img{
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+
+.aboutus-pHead{
+background:#FFF7EB;
+background-image: url(https://i.pinimg.com/originals/63/a1/2d/63a12dca18b4947ce56cd09e87afacb3.png);
+background-position:top;
+background-repeat:no-repeat;
+background-size: 100%;
+text-align: center;
+
+.aboutus-intro{
+padding: 2%;
+font-weight: bolder;
+font-size: 40px;
+}
+}
+
+.aboutus-developers{
+text-align: center;
+margin: 10% 0% 20% 0%;
+
+h1{
+  cursor: pointer;
+}
+}
+
+.aboutus-bigDiv {
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.omar{ 
+width:100%; 
+color: black;
+}
+
+.aboutus-cardTitle{
+background-color: #e9d3ec;
+text-align: center;
+}
+
+.aboutus-cardText{
+background-color: #fcecff;
+}
+
+.aboutus-goBackBtnDiv{
+text-align: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 225px;
+  height: 250px;
+  perspective: 1000px;
+  margin-left: 10%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: black;
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  color: black;
+}
+
+@keyframes XX {
+
+  from {
+      opacity: 0;
+      transform: matrix(-15, -2, 9, 7, 11, 1);
+
+  }
+  
+  to {
+  
+      opacity: 5;
+      transform: rotateX(0);
+
+  }
+}
+
+.flip-card-front, .flip-card-back {
+  color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10%;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  font-weight: bold;
+}
+
+.flip-card-back {
+  background-color: #e9d3ec;
+  color: black;
+  transform: rotateY(180deg);
+  height: 112%;
+
+p{
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 20%;
+}
+
+}
+
+
+.omar2 {
+background-color: #e9d3ec;
+font-size: 1.35rem;
+padding: 5% 0% 5% 0%;
+border-radius: 2%;
+// border: black 0.5px solid;
+}
+
+
+.a-social{
+color: rgb(78, 76, 76);
+}
+
+
+.aboutus-Home{
+  font-size: 25px;
+}
+
+
+
+.aboutus-buttons{
+  margin-top: 20px;
+  width: 125px;
+  color: #613d61;
+}
+
+.inside-logo{
+  cursor: pointer;
+}
+
+.empty{
+    margin-top: 5%;
+
+    
+}
+
+.empty{
+    margin-top: 5%;
+    
+}
