@@ -8,9 +8,17 @@ import Header from "../header/header";
 function signIn(props) {
 
     return (
+<<<<<<< HEAD
         <>
         <Header />
 
+=======
+
+        <>
+        <Header />
+
+
+>>>>>>> b686a284547686ff5bde9c1d980fc1f796e364a3
             <Form>
                 <Form.Row className="login-form">
                 <Form.Group as={Col} controlId="formGridEmail" id="loginpage">
