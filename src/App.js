@@ -15,7 +15,25 @@ import About from './components/Aboutus/aboutus';
 function App() {
   return (
     <div className="App">
-  
+
+    {/* <Header /> */}
+    {/* <Login/>
+      <SignIn/> */}
+       {/* <RegistrationForm />  */}
+      {/* <Dashboard/>
+      <DashboardCompany/> */}
+
+     <DashboardCompany/> 
+     <PortfoiRege/>
+     <DashboardCompany/>
+     <Dashboard/>
+
+      {/* <About/> */}
+      {/* <QR/>  */}
+      {/* <Features/>
+      <Recent/>
+      <How/>
+      <Footer /> */}
     </div>
   );
 }
