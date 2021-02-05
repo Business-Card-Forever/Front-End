@@ -67,18 +67,18 @@ class Header extends React.Component {
                     <Nav className="mr-auto">
                         <Nav.Link style={homeStyle} href="/">Home</Nav.Link>
                         <Nav.Link style={style} href="/aboutus">About Us</Nav.Link>
-                        <Nav.Link style={style} href="/">Events</Nav.Link>
+                        <Nav.Link style={style} href="/events">Events</Nav.Link>
                     </Nav>
 
                     {/* <Form className="loginBtn">
                         <Button onClick={this.handleLogin} variant="outline-info">Login1</Button>
                     </Form>
-
+                                            <Nav.Link style={style} href="/events">Events</Nav.Link>
                     <Form className="signinBtn">
                         <Button onClick={this.handleSignup} variant="outline-info">Sign Up1</Button>
                     </Form> */}
-                        <Login userLogin={this.userLogin}/>
-
+                        {/* <Login userLogin={this.userLogin}/> */}
+                        <Nav.Link style={style} href="/login">Login</Nav.Link>
                 </Navbar>
 
                 <div className="emptyDiv"> </div>

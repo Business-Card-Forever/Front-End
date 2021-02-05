@@ -5,8 +5,8 @@ import './UserForm.css';
 import img from './User-Profile-PNG-High-Quality-Image.png';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
-
+// import Portfolio2 from './components/Portfolio2';
+// import { Link } from 'react-router-dom';
 // const Date = () => {
 //     const [startDate, setStartDate] = useState(new Date());
 //     return (
@@ -29,7 +29,8 @@ function FormU(){
                             <Row style={{borderStyle: 'none none solid none' ,borderColor:'#F5F5F5' , borderWidth:'1px' , marginRight:'5%'}} >
                             <h1> Edit my profile</h1>
                             <Button className='b1' variant="primary" >View Your Portfolio</Button>
-                            {/* onClick={this.handleModal} */}
+                            {/* onClick={this.handleModal} */} 
+                            {/* <Link to="/Portfolio2"></Link> */}
                             </Row>
 
                             <br></br>
