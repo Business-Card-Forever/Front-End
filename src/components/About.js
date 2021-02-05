@@ -18,7 +18,7 @@ class About extends Component {
 
     return (
        <>
-           <Header />
+
 
       <section id="about">
       <div className="row">
