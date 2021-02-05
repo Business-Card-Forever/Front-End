@@ -21,17 +21,15 @@ function App() {
     <>
     <div className="App">
 
-    {/* <Header /> */}
-    {/* <Login/> */}
-    {/* <Events/> */}
-      {/* <Features/> */}
-
+    <Header />
+    <Login/>
+    <Events/>
+      {/* <RegistrationForm/> */}
+      
       <Recent/>
-      {/* <About/> */}
-      {/* <How/> */}
-      {/* <Footer /> */}
-      {/* < Portfolio2/> */}
-    </div>
+      <How/>
+      <Footer />
+      </div>
     </>
   );
 }
