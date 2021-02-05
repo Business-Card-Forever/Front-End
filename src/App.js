@@ -27,7 +27,7 @@ function App() {
       {/* <RegistrationForm/> */}
       
       <Recent/>
-      <How/>
+      {/* <How/> */}
       <Footer />
       </div>
     </>
