@@ -5,19 +5,14 @@ import './reg.css'
 import logo from '../../img/logo.png';
 import { Navbar, Nav, Button, Form, Modal, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Login from '../login/login';
 import SignUp from '../signup/signup';
-
 // import VedioBG from '../main/main'
 import header from '../header/header'
-
-
-
 const RegistrationForm = () => {
     return (
       <>
-      <header />
+      {/* <header /> */}
       <MDBContainer>
         <MDBRow>
           <MDBCol md='6'>
@@ -43,25 +38,28 @@ const RegistrationForm = () => {
                   </h3>
                 </div>
                 <MDBInput
-                  label='First Name'
+                  label='Company Name'
                   group
                   type='text'
                   validate
+                  required
                   labelClass='white-text'
                 />
                 <MDBInput
-                  label='Last Name'
+                  label='Company Address'
                   group
                   type='text'
                   validate
+                  required
                   labelClass='white-text'
                 />
              
                 <MDBInput
-                  label='Your email'
+                  label='Company Email'
                   group
                   type='text'
                   validate
+                  required
                   labelClass='white-text'
                 />
                 <MDBInput
@@ -69,6 +67,7 @@ const RegistrationForm = () => {
                   group
                   type='password'
                   validate
+                  required
                   labelClass='white-text'
                 />
                 <MDBInput
@@ -76,15 +75,35 @@ const RegistrationForm = () => {
                   group
                   type='white-text'
                   validate
+                  required
                   labelClass='white-text'
                 />
                  <MDBInput
-                  label='Company Address'
+                  label=' About Company '
                   group
                   type='white-text'
                   validate
+                  required
                   labelClass='white-text'
                 />
+                  <MDBInput
+                  label=' Number of   Employee '
+                  group
+                  type='white-text'
+                  validate
+                  required
+                  labelClass='white-text'
+                />
+                  <MDBInput
+                  label='Lunch Date '
+                  group
+                  type='white-text'
+                  validate
+                  type='date'
+                  required
+                  labelClass='white-text'
+                />
+
 
 
                 <MDBRow className='d-flex align-items-center mb-4'>
@@ -94,16 +113,17 @@ const RegistrationForm = () => {
                       rounded
                       type='button'
                       className='btn-block z-depth-1'
+                      
                     >
-                      Sign in
+                      Register
                     </MDBBtn>
                   </div>
                 </MDBRow>
                 <MDBCol md='12'>
                   <p className='font-small white-text d-flex justify-content-end'>
                     Have an account?
-                    <a href='#!' className='green-text ml-1 font-weight-bold'>
-                      Log in
+                    <a href='#' className='green-text ml-1 font-weight-bold'>
+                      Login In 
                     </a>
                   </p>
                 </MDBCol>
@@ -142,25 +162,22 @@ const RegistrationForm = () => {
                   </h3>
                 </div>
                 <MDBInput
-                  label='First Name'
+                  label='Full Name'
                   group
+                  
                   type='text'
                   validate
+                  required
                   labelClass='white-text'
                 />
-                <MDBInput
-                  label='Last Name'
-                  group
-                  type='text'
-                  validate
-                  labelClass='white-text'
-                />
+               
              
                 <MDBInput
                   label='Your email'
                   group
                   type='text'
                   validate
+                  required
                   labelClass='white-text'
                 />
                 <MDBInput
@@ -168,6 +185,40 @@ const RegistrationForm = () => {
                   group
                   type='password'
                   validate
+                  required
+                  labelClass='white-text'
+                />
+                 <MDBInput
+                  label= ' Your City'
+                  group
+                  type='text'
+                  validate
+                  required
+                  labelClass='white-text'
+                />
+                <MDBInput
+                  label=' Your Birthday'
+                  group
+                  type='text'
+                  validate
+                  type='date'
+                  required
+                  labelClass='white-text'
+                />
+                <MDBInput
+                  label=' Your Major'
+                  group
+                  type='text'
+                  validate
+                  required
+                  labelClass='white-text'
+                />
+                <MDBInput
+                  label='About You'
+                  group
+                  type='text'
+                  validate
+                  required
                   labelClass='white-text'
                 />
 
@@ -178,8 +229,8 @@ const RegistrationForm = () => {
                       rounded
                       type='button'
                       className='btn-block z-depth-1'
-                    >
-                      Sign in
+                      >
+                      Register
                     </MDBBtn>
                   </div>
                 </MDBRow>
