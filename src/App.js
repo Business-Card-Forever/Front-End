@@ -22,8 +22,8 @@ function App() {
     <div className="App">
 
     <Header />
-    <Login/>
-    <Events/>
+    {/* <Login/>
+    <Events/> */}
       {/* <RegistrationForm/> */}
       
       <Recent/>
