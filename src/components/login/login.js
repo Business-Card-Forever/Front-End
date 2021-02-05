@@ -229,10 +229,6 @@ class Login extends Component {
               </MDBRow>
               <MDBCol md='12'>
                 <p className='font-small white-text d-flex justify-content-end'>
-                  {/* Have an account?
-                  <a href='#!' className='green-text ml-1 font-weight-bold'>
-                    Log in
-                  </a> */}
                 </p>
               </MDBCol>
             </div>
