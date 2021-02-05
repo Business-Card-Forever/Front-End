@@ -40,7 +40,7 @@ const Events = props => {
                     <div class="leftBox">
                         <div class="content">
                             <h1>E-BCard Events</h1>
-                            <p className='events-description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p className='events-description'>A modern and professional, free event and conference website template, ensuring an enviable experience. To push the potential of your upcoming conference to new heights, craft an online presence that will go over and beyond.</p>
                         </div>
                     </div>
                     <div class="events">
