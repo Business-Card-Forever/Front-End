@@ -75,51 +75,29 @@ class Login extends Component {
         return (
             <>
              <Header />
-            <div>
-                <h1> login user form</h1>
-                <lable>
-                    Username:
-                    <input type="text" name="username"
+             <div className="body-login">
+            <div className="main">
+                <img className="sign" align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
+                <form className="form1">
+                
+                    <input type="text" name="username" className="un" align="center" placeholder="Username"
                     value={this.state.credentials.username} 
                     onChange={this.inputChanged}/>
-                </lable>
-                <br/>
-                <lable>
-                    Password : 
-                    <input type="password" name="password"
+                
+           
+                   
+                    <input type="password" name="password" className="pass" align="center" placeholder="Password"
                     value={this.state.credentials.password} 
                     onChange={this.inputChanged}/>
-                </lable>
-                <br/>
-                <button onClick={this.login}>Login</button>
-                <button onClick={this.register}>Register</button>
+               
+                <div className="div-login"><a onClick={this.login} className="submit" align="center">Login</a></div>
+                <div className="div-register"><a onClick={this.register} className="submit2" align="center">Register</a></div>
+                </form>
+            </div>
             </div>
              <Footer />
              </>
-    //         <div class="login-wrap">
-	// <div class="login-html">
-	// 	{/* <input id="tab-1" type="radio" name="tab" class="sign-in" checked></input><label for="tab-1" class="tab">Sign In</label>
-	// 	<input id="tab-2" type="radio" name="tab" class="sign-up"></input><label for="tab-2" class="tab">Sign Up</label> */}
-	// 	<div class="login-form">
-	// 		<div class="sign-in-htm">
-	// 			<div class="group">
-	// 				<label for="user" class="label">Username</label>
-	// 				<input id="user" type="text" class="input"  value={this.state.credentials.username} 
-    //                 onChange={this.inputChanged}/>
-	// 			</div>
-	// 			<div class="group">
-	// 				<label for="pass" class="label">Password</label>
-	// 				<input id="pass" type="password" class="input" data-type="password" value={this.state.credentials.username} 
-    //                 onChange={this.inputChanged}/>
-	// 			</div>
-	// 			<div class="group">
-	// 				<button type="submit" class="button" value="Sign In" onClick={this.login}>Log In</button>
-	// 			</div>
-	// 			<div class="hr"></div>
-	// 		</div>
-	// 		</div>
-	// 	</div>
-    // </div>
+
    
         );
     }
@@ -134,3 +112,5 @@ export default Login;
 
 
 
+
+ 

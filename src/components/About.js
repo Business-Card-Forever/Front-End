@@ -19,7 +19,6 @@ class About extends Component {
     return (
        <>
 
-
       <section id="about">
       <div className="row">
          <div className="three columns">
