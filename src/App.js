@@ -15,16 +15,17 @@ import Events from './components/events/events';
 import UserForm from './components/UserForm/UserForm';
 import Portfolio2 from './components/Portfolio2';
 
+
 function App() {
   return (
     <>
     <div className="App">
 
     <Header />
-    {/* <Login/> */}
-    {/* <Events/> */}
-      <RegistrationForm/>
-
+    {/* <Login/>
+    <Events/> */}
+      {/* <RegistrationForm/> */}
+      
       <Recent/>
       {/* <How/> */}
       <Footer />
