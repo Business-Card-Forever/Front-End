@@ -1,11 +1,15 @@
 import React from 'react';
 import { Button, Form, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './signup.css'
+import './signup.css';
+import Footer from "../footer/footer";
+import Header from "../header/header";
 
 function signIn(props) {
 
     return (
+        <>
+        <Header />
 
             <Form>
                 <Form.Row className="login-form">
@@ -44,6 +48,8 @@ function signIn(props) {
                 Submit
             </Button>
         </Form>
+        <Footer />
+        </>
     );
 
 }

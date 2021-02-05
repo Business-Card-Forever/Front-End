@@ -4,6 +4,8 @@ import { Button } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
 import { Col } from "react-bootstrap";
 import React, { Component } from 'react';
+import Footer from "../footer/footer";
+import Header from "../header/header";
 class PortfoiRege extends React.Component {
     render() {
         return (
@@ -50,7 +52,10 @@ class PortfoiRege extends React.Component {
 
                     <Button variant="primary" type="submit">Submit</Button>
                 </Form>
- */}                <Container style={{ marginLeft: '1%', marginRight: '5%' }}>
+
+ */}
+  <Header />            
+     <Container style={{ marginLeft: '1%', marginRight: '5%' }}>
                     <Col>
                         <Row sm={2} style={{ marginLeft: 150, paddingBottom: 20 }}>
                             <Form.Label>Full Name</Form.Label>
@@ -83,6 +88,7 @@ class PortfoiRege extends React.Component {
 
 
                 </Container>
+                <Footer />
             </>
 
         );

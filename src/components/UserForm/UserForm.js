@@ -5,6 +5,8 @@ import './UserForm.css';
 import img from './User-Profile-PNG-High-Quality-Image.png';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Footer from "../footer/footer";
+import Header from "../header/header";
 // import Portfolio2 from './components/Portfolio2';
 // import { Link } from 'react-router-dom';
 // const Date = () => {
@@ -19,6 +21,8 @@ function FormU(){
 
     return(
         <>
+            <Header />
+
         < div style={{background:'#F5F5F5'}}>
 
 
@@ -189,7 +193,7 @@ function FormU(){
 
 
         </div>
-        
+        <Footer />
         </>
     );
 }
