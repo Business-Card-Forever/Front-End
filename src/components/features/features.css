@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Audiowide&display=swap');
 
 .features-container{
-background-image: url('https://cdn.wallpapersafari.com/41/72/DqcEei.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -41,8 +40,16 @@ font-weight: lighter;
 }
 
 .features2 {
-text-align: center;
+    margin-left: auto;
+    /* background-color: black; */
+    background-image: linear-gradient( 109.5deg,  rgba(76,221,242,1) 11.2%, rgba(92,121,255,1) 91.1% );
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    margin-right: auto;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 59%);
 }
+
 
 /* ...................................... */
 
@@ -62,9 +69,6 @@ margin: 20px;
 }
 
 .demo-box {
--webkit-animation: glow 1s ease-in-out infinite alternate;
--moz-animation: glow 1s ease-in-out infinite alternate;
-animation: glow 4s ease-in-out infinite alternate;
 }
 
 #glow-blue {
