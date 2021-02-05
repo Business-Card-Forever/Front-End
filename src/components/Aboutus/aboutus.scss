@@ -24,7 +24,7 @@ justify-content: center;
 .bigfigure{
 margin-left: -11%;
 animation: XX 3s ;
-  background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190623/ourmid/pngtree-blue-geometric-business-card-background-image_239795.jpg);
+  // background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190623/ourmid/pngtree-blue-geometric-business-card-background-image_239795.jpg);
 // background-position:top;
 background-repeat:no-repeat;
 background-size: 100%;
@@ -149,11 +149,13 @@ text-align: center;
   transform: rotateY(180deg);
   height: 112%;
 
-p{
+.aboutp{
   font-weight: bold;
   font-family: sans-serif;
   margin-top: 20%;
-}
+  font-size: 17px;
+  font-family: cursive;
+} 
 
 }
 

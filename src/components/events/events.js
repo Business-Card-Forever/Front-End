@@ -25,13 +25,13 @@ const Events = props => {
 
 
             <div class="page-event">
-                <div class="cover">
+                <div class="coveren">
                     <div class="heading">events</div>
                 </div>
             </div>
 
 
-            <div class="container">
+            <div class="omaren">
 
                 <section>
 

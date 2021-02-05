@@ -8,7 +8,7 @@ background-size: cover;
 text-align: center;
 }
 
-.cover {
+.coveren {
 background-color: rgb(84, 107, 209);
 height: 360px;
 // background-image: url('https://goo.gl/NA3iQP');
@@ -60,6 +60,9 @@ grid-template-areas:
 grid-area: main;
 padding: 50px;
 box-sizing: border-box;
+width: 85%;
+font-size: 20px;
+margin-left: 8%;
 }
 
 section .leftBox .content {
@@ -91,6 +94,7 @@ border-radius: 20px;
 grid-area: event;
 background-color: rgba(0, 0, 0, 0.5);
 box-sizing: border-box;
+width: 78%;
 }
 
 section .events ul {
@@ -189,7 +193,7 @@ border-color: #e91e63;
     margin-top: 5%;
 }
 
-.container {
+.omaren {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
@@ -218,7 +222,7 @@ border-color: #e91e63;
 }
 
 
-.cover {
+.coveren {
     animation: eventX 1s;
 }
 
