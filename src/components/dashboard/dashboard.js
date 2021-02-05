@@ -8,9 +8,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faPinterest, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Button, Form, Modal, Col, Row, Dropdown } from 'react-bootstrap';
-
-
 import Footer from '../footer/footer';
+
+
+
+function GetData(){
+
+    let user_id =localStorage.getItem('user_id');
+
+            /////////////////////// Get User Data///////////////////////////////
+            fetch(`http://e-bcard.herokuapp.com/api/userinfo/${user_id}`,{
+                method:'GET',
+                headers:{'Content-Type':'application/json'},
+            })
+            .then(data =>data.json())
+            .then(
+                data => {
+                    <Dashboard data={data} />
+                    return data
+                }
+            ).catch(error => console.log("here",error));
+
+
+}
+
+
 class Dashboard extends React.Component {
     constructor(props) {
         super(props);
@@ -28,7 +50,8 @@ class Dashboard extends React.Component {
     }
 
     render() {
-
+        setTimeout(function(){ GetData(); }, 3000);
+            console.log(this.props.data)
         return (
             <>
                 <Navbar bg="dark" variant="dark" >
@@ -192,5 +215,7 @@ class Dashboard extends React.Component {
         )
     }
 }
+
+
 
 export default Dashboard;

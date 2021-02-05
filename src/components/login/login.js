@@ -36,7 +36,7 @@ class Login extends Component {
         .then(data =>data.json())
         .then(
             data => {
-                console.log(data);
+                // console.log(data);
 
                 data.map(user => {
                     if (user.username ==this.state.credentials.username){
