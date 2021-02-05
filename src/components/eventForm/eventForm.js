@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-// import logo from '../../img/logo.png';
+import logo from '../../img/logo.png';
 import { Navbar, Nav, Button, Form, Modal, Col, Row } from 'react-bootstrap';
-// import header from '../header/header'
+import header from '../header/header'
 
 
 class Events extends Component {

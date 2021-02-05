@@ -9,6 +9,8 @@ import dana from "../../img/dana.jpg";
 import hadeel from "../../img/hadeel.jpg";
 import aghyad from "../../img/aghyad.jpg";
 import momayaz from "../../img/momayaz.jpg";
+
+
 import Footer from '../footer/footer';
 
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -121,7 +123,9 @@ const Events = props => {
                 </section>
                 
             </div>
+
             <div className='empDiv'></div>
+
             <Footer />
 
 
