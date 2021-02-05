@@ -36,6 +36,7 @@ class Header extends React.Component {
 
     userLogin = (tok) =>{
         this.setState({token:tok})
+        console.log(tok)
         console.log(this.state.token);
         
     }
@@ -65,18 +66,19 @@ class Header extends React.Component {
 
                     <Nav className="mr-auto">
                         <Nav.Link style={homeStyle} href="/">Home</Nav.Link>
-                        <Nav.Link style={style} href="/">About Us</Nav.Link>
-                        <Nav.Link style={style} href="/">Events</Nav.Link>
+                        <Nav.Link style={style} href="/aboutus">About Us</Nav.Link>
+                        <Nav.Link style={style} href="/events">Events</Nav.Link>
                     </Nav>
 
-                    <Form className="loginBtn">
-                        <Button onClick={this.handleLogin} variant="outline-info">Login</Button>
+                    {/* <Form className="loginBtn">
+                        <Button onClick={this.handleLogin} variant="outline-info">Login1</Button>
                     </Form>
-
+                                            <Nav.Link style={style} href="/events">Events</Nav.Link>
                     <Form className="signinBtn">
-                        <Button onClick={this.handleSignup} variant="outline-info">Sign Up</Button>
-                    </Form>
-
+                        <Button onClick={this.handleSignup} variant="outline-info">Sign Up1</Button>
+                    </Form> */}
+                        {/* <Login userLogin={this.userLogin}/> */}
+                        <Nav.Link style={style} href="/login">Login</Nav.Link>
                 </Navbar>
 
                 <div className="emptyDiv"> </div>
@@ -91,7 +93,7 @@ class Header extends React.Component {
                     </Col>
 
 
-                
+{/*                 
                 <Modal show={this.state.loginBtn} centered className="loginModal">
                     <Modal.Header closeButton onClick={this.handleLoginClose}>
                         <Modal.Title id="example-modal-sizes-title-lg" className='modalTitle'> Login </Modal.Title>
@@ -101,8 +103,8 @@ class Header extends React.Component {
                         <Login userLogin={this.userLogin} />
                     </Modal.Body>
                 </Modal>
-
-
+ */}
+{/* 
                 <Modal show={this.state.SignUpBtn} centered className="signupModal">
                     <Modal.Header closeButton onClick={this.handleSignUpClose}>
                         <Modal.Title id="example-modal-sizes-title-lg" className='modalTitle'> Sign Up </Modal.Title>
@@ -111,7 +113,7 @@ class Header extends React.Component {
                     <Modal.Body>
                         <SignUp />
                     </Modal.Body>
-                </Modal>
+                </Modal> */}
                 
                 <div className="dash-emptyDiv"></div>
 

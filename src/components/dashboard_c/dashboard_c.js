@@ -55,7 +55,7 @@ class DashboardCompany extends React.Component {
 
                     <Nav className="mr-auto">
                         <div className="home">
-                            <h1 style={{ marginLeft: '200' }}>E-BCard</h1>
+                            <h1 style={{ textAlign:'center' }}>E-BCard</h1>
                         </div>
                     </Nav>
 
@@ -79,7 +79,7 @@ class DashboardCompany extends React.Component {
                         </Col>
 
                         <Col xs={4}>
-                            <Form style={{ marginTop: 50 ,marginLeft:20}} >
+                            <Form style={{ marginTop: 50 }} >
                                 <Form.Row>
                                     <label className='l'> Company Name </label>
                                 </Form.Row>
@@ -107,7 +107,7 @@ class DashboardCompany extends React.Component {
 
                                 </Form.Row>
                             </Form>
-                            <Form  style={{ marginLeft:20}} >
+                            <Form   >
 
                                 <Form.Row>
                                     <label className='l'> Email </label>
@@ -118,13 +118,30 @@ class DashboardCompany extends React.Component {
 
                                 </Form.Row>
                                 <Form.Row>
-                                    <label className='l' > Phone </label>
+                                    <label className='l' > About Company </label>
                                 </Form.Row>
                                 <Form.Row>
 
-                                    <Form.Control placeholder="+962-78202024" className='rows' readOnly />
+                                    <Form.Control placeholder="jhjfhjfjfhfj" className='rows' readOnly />
 
                                 </Form.Row>
+                                <Form.Row>
+                                    <label className='l' > Number of employee </label>
+                                </Form.Row>
+                                <Form.Row>
+
+                                    <Form.Control placeholder="4-50" className='rows' readOnly />
+
+                                </Form.Row>
+                                <Form.Row>
+                                    <label className='l' > Lunch date  </label>
+                                </Form.Row>
+                                <Form.Row>
+
+                                    <Form.Control placeholder="4-10-1998"type='date' className='rows'  />
+
+                                </Form.Row>
+
 
                                 
                             </Form>

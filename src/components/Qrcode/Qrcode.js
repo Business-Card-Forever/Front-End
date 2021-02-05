@@ -10,8 +10,11 @@ function QrCodeGenerator() {
 
 
     const generateQrCode = async () => {
+                            // localStorage.getItem('access_token');
     // setText('https://web.facebook.com/aghyadalbalkhi/');
-        var text_id = 'https://web.facebook.com/aghyadalbalkhi/';
+        // var text_id = 'https://web.facebook.com/aghyadalbalkhi/';
+        var text_id = localStorage.getItem('user_id');
+
     try {
         const response = await QRCode.toDataURL(text_id);
         setImageUrl(response);
@@ -22,7 +25,7 @@ function QrCodeGenerator() {
     return (
     <Container className={classes.conatiner}>
             <Card>
-                <h2 className={classes.title}>Generate Code with React js</h2>
+                <h2 className={classes.title}> E-B Card QR Code Generator </h2>
                 <CardContent>
                     <Grid container spacing={2}>
                         <Grid item xl={4} lg={4} md={6} sm={12} xs={12}>
