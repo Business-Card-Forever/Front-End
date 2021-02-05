@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faPinterest, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Button, Form, Modal, Col, Row, Dropdown } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import Footer from '../footer/footer';
 class Dashboard extends React.Component {

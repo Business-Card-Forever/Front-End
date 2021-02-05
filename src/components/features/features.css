@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Audiowide&display=swap');
 
 .features-container{
-background-image: url('https://cdn.wallpapersafari.com/41/72/DqcEei.jpg');
-background-repeat: no-repeat;
-background-size: cover;
+    background-color: white;
 }
 
 .features {
