@@ -16,7 +16,9 @@ import Recent from './components/recent/recent';
 import SignUp from './components/signup/signup';
 import RegPage from './components/regPage/reg';
 import About from './components/Aboutus/aboutus';
-
+import Events from './components/events/events';
+import UserForm from './components/UserForm/UserForm';
+import Portfolio2 from './components/Portfolio2';
 
 
 
@@ -25,7 +27,6 @@ const routing = (
 <Router>
     <React.StrictMode>
         <Switch>
-
             <Route exact path="/" component={App} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/dashboard_c" component={Dashboard_c} />
@@ -39,7 +40,10 @@ const routing = (
             <Route exact path="/recent" component={Recent} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/aboutus" component={About} />  
-            <Route exact path="/regpage" component={RegPage} /> 
+            <Route exact path="/regpage" component={RegPage} />
+            <Route exact path="/events" component={Events} /> 
+            <Route exact path="/userform" component={UserForm} />
+            <Route exact path="/Portfolio2" component={Portfolio2} />
         </Switch>
         
         

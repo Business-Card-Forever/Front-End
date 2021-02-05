@@ -1,6 +1,9 @@
 body{
 /* background-image: url('https://monicabalut.files.wordpress.com/2010/02/gradient-mask2.png'); */
 /* background-image: url('../../img/bg2.png'); */
+/* background-repeat: no-repeat;
+background-size:unset; */
+background-color: white;
 background-repeat: no-repeat;
 background-size:unset;
 }
