@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Gloria+Hallelujah&family=Grenze+Gotisch:wght@500&family=Open+Sans&family=Permanent+Marker&family=Satisfy&display=swap');
 
 .footer{
-    background-color: white;
+    background-color: rgb(93, 155, 248);
+    color: blanchedalmond;
 }
 
 .follow{
@@ -10,7 +11,7 @@
 .social-media{
         text-align: center;
         font-size: 17px;
-        color: #F8D271;
+        color: #ffffff;
     
 }
 .social-media p{
@@ -18,7 +19,7 @@
     font-weight: bold;
     text-align: center;
     font-size: 17px;
-    color: #F8D271;
+    color: #ffffff;
 }
 
 a.social{
@@ -26,7 +27,7 @@ a.social{
     transition: transform 250ms;
     display: inline-block;
     font-size: 17px;
-    color: #F8D271;
+    color: #ffffff;
     
 }
 
@@ -36,17 +37,17 @@ a.social:hover{
 }
 
 a.facebook{
-    color: #F8D271;
+    color: #ffffff;
 }
 a.twitter{
-    color: #F8D271;
+    color: #ffffff;
 }
 
 a.instagram {
-    color: #F8D271;
+    color: #ffffff;
 }
 a.pinterest{
-    color: #F8D271;
+    color: #ffffff;
 }
 
 .div-2{
@@ -68,11 +69,12 @@ a.pinterest{
     padding-left: 5%;
 }
 
-p.rights{
+.rights{
     font-family: sans-serif;
-    color: #F8D271;
-    font-size: 17px;
+    color: #ffffff;
+    font-size: 18px;
     margin-top: 1%;
+    
 }
 
 .span-col{
