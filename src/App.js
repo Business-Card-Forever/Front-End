@@ -1,5 +1,5 @@
 import Header from './components/header/header';
-// import Login from './components/login/login';
+import Login from './components/login/login';
 // import SignIn from './components/signin/signin';
 import Features from './components/features/features';
 import Dashboard from "./components/dashboard/dashboard";
@@ -16,8 +16,8 @@ function App() {
     <div className="App">
 
     <Header />
-    {/* <Login/>
-      <SignIn/> */}
+    <Login/>
+      {/* <SignIn/>  */}
        {/* <RegistrationForm />  */}
       {/* <Dashboard/>
       <DashboardCompany/> */}
