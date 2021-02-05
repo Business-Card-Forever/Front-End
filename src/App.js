@@ -23,13 +23,12 @@ function App() {
     <Header />
     {/* <Login/> */}
     {/* <Events/> */}
-      <Features/>
+      <RegistrationForm/>
 
       <Recent/>
       <How/>
       <Footer />
-      {/* < Portfolio2/> */}
-    </div>
+      </div>
     </>
   );
 }
