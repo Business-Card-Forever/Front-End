@@ -105,6 +105,7 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import Footer from '../footer/footer';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBInput } from 'mdbreact';
+import { Button } from "bootstrap";
 
 
 
@@ -116,7 +117,7 @@ class Login extends Component {
 
     login = event => {
 
-        fetch('http://127.0.0.1:8000/auth/', {
+        fetch('https://e-bcard.herokuapp.com/api/auth/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(this.state.credentials)
@@ -145,15 +146,16 @@ class Login extends Component {
     register = event => {
         console.log(this.state.credentials.username)
         console.log(this.state.credentials.password)
-        fetch('http://127.0.0.1:8000/api/users/', {
-            method: 'POST',
+        fetch('https://e-bcard.herokuapp.com/api/users/', {
+            method: 'GET',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(this.state.credentials)
+            // body: JSON.stringify(this.state.credentials)
         })
             .then(data => data.json())
             .then(
                 data => {
                     alert('User Created')
+                    console.log(data, 'kkkkkkkkkkkk');
                     console.log(data.token);
 
                 }
@@ -179,7 +181,12 @@ class Login extends Component {
 
 
 
+
 <div className="login-container">
+<button onClick={this.register} >testttt</button>
+
+
+
     <MDBContainer>
       <MDBRow>
         <MDBCol md='6'>

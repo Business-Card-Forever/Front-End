@@ -1,15 +1,12 @@
 import React, {useState} from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBInput } from 'mdbreact';
 import './reg.css'
-// import './header.css';
+
 import logo from '../../img/logo.png';
-import { Navbar, Nav, Button, Form, Modal, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Login from '../login/login';
 import SignUp from '../signup/signup';
-
-// import VedioBG from '../main/main'
 import header from '../header/header'
 
 

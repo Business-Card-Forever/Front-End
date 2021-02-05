@@ -1,20 +1,57 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './recent.css';
 import portfolio from '../../img/portfolio.png'
 import SignUpBtn from '../header/header'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-class Recent extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            modalBtn: false,
-        }
-    }
+function Recent (props) {
 
-    render() {
+    let url = 'https://e-bcard.herokuapp.com/api/users/';
 
+    const [names, setNames] = useState({});
+
+    useEffect(() =>{
+        fetchNames()
+
+
+    },[]);
+
+    const fetchNames = async () => {
+        const res = await fetch(url);
+        const jsonData = await res.json();
+        let last5 =  jsonData.slice(Math.max(jsonData.length - 5, 0))
+        setNames(last5);
+    };
+
+    console.log(names[1].username);
+    
+
+
+
+
+    // useEffect(() => {
+
+    //     fetch('https://e-bcard.herokuapp.com/api/users/', {
+    //         method: 'GET',
+    //         headers: { 'Content-Type': 'application/json' },
+    //     })
+    //         .then(data => data.json())
+    //         .then(
+    //             data => {
+    //             let last5 =  data.slice(Math.max(data.length - 5, 0))
+    //             // console.log(last5);
+    //             setNames([last5]);
+    //         })
+    //     })
+        // console.log(names[1].username, '77777777777777777');
+        
+        
+        // names.map(values =>{
+        //     console.log(values, 'kkkkkkkkkkk');
+        //     // return setNames(values.username)
+        //     })
+        
         return (
             <div className="features-container2">
 
@@ -23,54 +60,56 @@ class Recent extends React.Component {
                 </div>
 
                 <div className='features2'>
-                    <div class="demo-container">
-                        <div class="demo-box2" id="glow-blue">
+                    <div className="demo-container">
+                        <div className="demo-box2" id="glow-blue">
+
+
                             <figure className='fig1'>
                                 <img className='one' src={portfolio} />
                                 <figcaption className='figcaption2'><br></br>
-                                Hadeel Hussam
+                                {names[4].username}
                                 </figcaption>
                             </figure>
                         </div>
 
-                        <div class="demo-box2 two" id="glow-green">
+                        <div className="demo-box2 two" id="glow-green">
                             <figure className='fig1'>
                                 <img src={portfolio} />
                                 <figcaption className='figcaption2'><br></br>
-                                Aghyad Albalkhi
+                                {names[3].username}
                                 </figcaption>
                             </figure>
 
                         </div>
 
-                        <div class="demo-box2 three" id="glow-red">
+                        <div className="demo-box2 three" id="glow-red">
                             <figure className='fig1'>
                                 <img src={portfolio} />
                                 <figcaption className='figcaption2'><br></br>
-                                Momayaz Aldoos
+                                {names[2].username}
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
 
 
-                    <div class="demo-box2 second2 four" id="glow-pink">
+                    <div className="demo-box2 second2 four" id="glow-pink">
                         <figure className='fig1'>
                             <img src={portfolio} />
                             <figcaption className='figcaption2'><br></br>
-                            Dana Kiswani
+                            {names[1].username}
                             </figcaption>
                         </figure>
 
                     </div>
 
-                    <button class="glow-on-hover" type="button">Create Your Own</button>
+                    <button className="glow-on-hover" type="button">Create Your Own</button>
 
-                    <div class="demo-box2 second2 five" id="glow-yellow">
+                    <div className="demo-box2 second2 five" id="glow-yellow">
                         <figure className='fig1'>
                             <img src={portfolio} />
                             <figcaption className='figcaption2'><br></br>
-                            Omar Zain
+                            {names[0].username}
                             </figcaption>
                         </figure>
                     </div>
@@ -82,6 +121,6 @@ class Recent extends React.Component {
 
         )
     }
-}
+
 
 export default Recent;
