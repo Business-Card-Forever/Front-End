@@ -16,12 +16,12 @@ import Portfolio2 from './components/Portfolio2';
 function App() {
   return (
     <div className="App">
-     {/* <Header />
+     <Header />
     <Features/>
       <Recent/>
       <How/>
-      <Footer /> */}
-     < Portfolio2/>
+      <Footer />
+     {/* < Portfolio2/> */}
     </div>
   );
 }
