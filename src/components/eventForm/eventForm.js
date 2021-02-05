@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import logo from '../../img/logo.png';
+// import logo from '../../img/logo.png';
 import { Navbar, Nav, Button, Form, Modal, Col, Row } from 'react-bootstrap';
-import header from '../header/header'
+// import header from '../header/header'
 
 
-class Events extends Component {
+class CreateEvents extends Component {
   render() {
 
     if(this.props.data){
@@ -103,4 +103,4 @@ class Events extends Component {
   }
 }
 
-export default Events;
+export default CreateEvents;
