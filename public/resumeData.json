@@ -1,0 +1,139 @@
+{
+  "main": {
+    "name":"Dana Kiswani",
+    "description":"I am a web development engineer and I use react and python to develop pages. This website is provided by be and my group to each person in ASAC",
+    "image":"profilepic.jpg",
+    "bio":"An excellent academic record, ability to understand and test software, and a strong understanding of core internet technologies. I seek to work as a Software Engineer to further my knowledge in the IT domain and utilize my skills.An excellent academic record, ability to understand and test software, and a strong understanding of core internet technologies. I seek to work as a Software Engineer to further my knowledge in the IT domain and utilize my skills.",
+    "contactmessage":"get in contact with me ..",
+    "email": "danakiswani@gmail.com",
+    "phone": "079-888-6666",
+    "github":"https://github.com/Business-Card-Forever",
+    "project":"https://github.com/Business-Card-Forever",
+    "address":{
+      "street":"(Airport-st)",
+      "city":"(Amman- Jordan)",
+      "state":"(xxx)",
+      "zip": "(000-0000)"
+    },
+    "website": "http://www.google.com",
+    "resumedownload":"http://google.com",
+    "social":[
+      {
+        "name":"facebook",
+        "url":"https://github.com/Business-Card-Forever",
+        "className":"fa fa-facebook"
+      },
+      {
+        "name":"twitter",
+        "url":"http://twitter.com",
+        "className":"fa fa-twitter"
+      },
+      {
+        "name":"linkedin",
+        "url":"https://github.com/Business-Card-Forever",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"instagram",
+        "url":"https://github.com/Business-Card-Forever",
+        "className":"fa fa-instagram"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/Business-Card-Forever",
+        "className":"fa fa-github"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "education":[
+      {
+        "school":"University?",
+        "degree":"BA in SE",
+        "graduated":"June 14",
+        "description":".."
+      },
+      {
+        "school":"ASAC",
+        "degree":"401 Student",
+        "graduated":"2021",
+        "description":"Describe your experience at ASAC, what you learned, what useful skills you have acquired etc."
+      }
+    ],
+    "work":[
+      {
+        "company":"Zain",
+        "title":"Network department",
+        "years":"2020",
+        "description":"Trained at Zain ”Main Branch” in Information Technology Department , I am getting training on “Banker “in business park, Network Department, IT service."
+      },
+      {
+        "company":"Arab Bank",
+        "title":"IT department",
+        "years":"2020",
+        "description":"Trained at the Arab Bank at the Main Branch of Arab Bank in the Information Technology Department, I worked on several activities; including Human resources System, Datacenter, internal communication network, Computer maintenance."
+      }
+    ],
+    "skills":[
+      {
+        "name":"Python",
+        "level":"60%"
+      },
+      {
+        "name":"Java Script",
+        "level":"55%"
+      },
+      {
+        "name":"ReactJs",
+        "level":"50%"
+      },
+      {
+        "name":"CSS",
+        "level":"90%"
+      },
+      {
+        "name":"C#",
+        "level":"50%"
+      },
+      {
+        "name":"JAVA",
+        "level":"80%"
+      }
+    ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"Salamon Coockies",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"HTTP_Cookie-512.png",
+        "url":"https://github.com/Dana-Kiswani/cookie-stand"
+      },
+      {
+        "title":"Crystel(Space)",
+        "category":"(offline now) A fighting gear company I started",
+        "image":"Space-exploration-web-design2.jpg",
+        "url":"http://www.google.com"
+      },
+      {
+        "title":"Buss Mall",
+        "category":"Website I built for a the buss mall.",
+        "image":"unnamed.png",
+        "url":"https://github.com/Dana-Kiswani/bus-mall"
+      },
+      {
+        "title":"Salamon Coockies",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"HTTP_Cookie-512.png",
+        "url":"https://github.com/Dana-Kiswani/cookie-stand"
+      },
+      {
+        "title":"Salamon Coockies",
+        "category":"My Travel Blog for my post-university travels",
+        "image":"HTTP_Cookie-512.png",
+        "url":"https://github.com/Dana-Kiswani/cookie-stand"
+      }
+    ]
+  }
+}
