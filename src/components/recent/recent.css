@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Audiowide&display=swap');
 
-.features-container2{
+/* .features-container2{
 background-image: url('../../img/recent.png');
 background-repeat: no-repeat;
 background-size: cover;
-}
+} */
 
 .features {
 text-align: center;
@@ -22,7 +22,7 @@ border-radius:12px;
 
 .fig1{
     cursor:pointer;
-    background-color: black;
+    background-color: white;
     height: 100%;
     border-radius: 10%;
 }

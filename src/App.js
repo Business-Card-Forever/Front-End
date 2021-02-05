@@ -1,5 +1,5 @@
 import Header from './components/header/header';
-// import Login from './components/login/login';
+import Login from './components/login/login';
 // import SignIn from './components/signin/signin';
 import Features from './components/features/features';
 import Dashboard from "./components/dashboard/dashboard";
@@ -12,17 +12,25 @@ import PortfoiRege   from "./components/PortfoiRege/PortfoiRege";
 import RegistrationForm from './components/regPage/reg'
 import About from './components/Aboutus/aboutus';
 import Events from './components/events/events';
+import UserForm from './components/UserForm/UserForm';
+import Portfolio2 from './components/Portfolio2';
 
 function App() {
   return (
+    <>
     <div className="App">
-      <Events/>
-    {/* <Header />
-    <Features/>
+
+    <Header />
+    {/* <Login/> */}
+    {/* <Events/> */}
+      <Features/>
+
       <Recent/>
       <How/>
-      <Footer /> */}
+      <Footer />
+      {/* < Portfolio2/> */}
     </div>
+    </>
   );
 }
 

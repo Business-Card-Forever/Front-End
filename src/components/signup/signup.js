@@ -8,8 +8,8 @@ function signIn(props) {
     return (
 
             <Form>
-                <Form.Row>
-                <Form.Group as={Col} controlId="formGridEmail">
+                <Form.Row className="login-form">
+                <Form.Group as={Col} controlId="formGridEmail" id="loginpage">
                     <Form.Label>Username</Form.Label><br/>
                     <Form.Control type="text" placeholder="Enter username" />
                 </Form.Group>
@@ -40,31 +40,6 @@ function signIn(props) {
                 <Form.Label>Industry</Form.Label>
                 <Form.Control placeholder="Company industry" />
             </Form.Group>
-
-            {/* <Form.Row>
-                <Form.Group as={Col} controlId="formGridCity">
-                    <Form.Label>City</Form.Label>
-                    <Form.Control />
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridState">
-                    <Form.Label>State</Form.Label>
-                    <Form.Control as="select" defaultValue="Choose...">
-                        <option>Choose...</option>
-                        <option>...</option>
-                    </Form.Control>
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridZip">
-                    <Form.Label>Zip</Form.Label>
-                    <Form.Control />
-                </Form.Group>
-            </Form.Row>
-
-            <Form.Group id="formGridCheckbox">
-                <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group> */}
-
             <Button variant="primary" type="submit">
                 Submit
             </Button>
