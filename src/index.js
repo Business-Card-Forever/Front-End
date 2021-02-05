@@ -16,7 +16,7 @@ import Recent from './components/recent/recent';
 import SignUp from './components/signup/signup';
 import RegPage from './components/regPage/reg';
 import About from './components/Aboutus/aboutus';
-
+import Events from './components/events/events';
 
 
 
@@ -39,7 +39,11 @@ const routing = (
             <Route exact path="/recent" component={Recent} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/aboutus" component={About} />  
-            <Route exact path="/regpage" component={RegPage} /> 
+            <Route exact path="/regpage" component={RegPage} />
+            <Route exact path="/events" component={Events} /> 
+            
+
+
         </Switch>
         
         

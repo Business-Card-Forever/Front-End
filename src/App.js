@@ -11,11 +11,17 @@ import QR from './components/Qrcode/Qrcode';
 import PortfoiRege   from "./components/PortfoiRege/PortfoiRege";
 import RegistrationForm from './components/regPage/reg'
 import About from './components/Aboutus/aboutus';
+import Events from './components/events/events';
 
 function App() {
   return (
     <div className="App">
-  
+      <Events/>
+    {/* <Header />
+    <Features/>
+      <Recent/>
+      <How/>
+      <Footer /> */}
     </div>
   );
 }
