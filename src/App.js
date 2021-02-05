@@ -1,5 +1,5 @@
 import Header from './components/header/header';
-// import Login from './components/login/login';
+import Login from './components/login/login';
 // import SignIn from './components/signin/signin';
 import Features from './components/features/features';
 import Dashboard from "./components/dashboard/dashboard";
@@ -18,8 +18,12 @@ function App() {
   return (
     <>
     <div className="App">
-      <Header />
-    <Features/>
+
+    <Header />
+    <Login/>
+ 
+      <Features/>
+
       <Recent/>
       <How/>
       <Footer />
