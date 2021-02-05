@@ -11,6 +11,7 @@ import QR from './components/Qrcode/Qrcode';
 import PortfoiRege   from "./components/PortfoiRege/PortfoiRege";
 import RegistrationForm from './components/regPage/reg'
 import About from './components/Aboutus/aboutus';
+import Events from './components/events/events';
 import UserForm from './components/UserForm/UserForm';
 import Portfolio2 from './components/Portfolio2';
 
@@ -20,14 +21,14 @@ function App() {
     <div className="App">
 
     <Header />
-    <Login/>
- 
+    {/* <Login/> */}
+    {/* <Events/> */}
       <Features/>
 
       <Recent/>
       <How/>
       <Footer />
-      < Portfolio2/>
+      {/* < Portfolio2/> */}
     </div>
     </>
   );

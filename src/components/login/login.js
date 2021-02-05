@@ -1,5 +1,5 @@
 // import React, { Component } from "react";
-import './login.css';
+// import './login.css';
 // import { Button, Form } from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -131,10 +131,7 @@ class Login extends Component {
                         // localStorage.getItem('access_token');
                         this.setState({ redirect: "/dashboard" });
                         localStorage.setItem('user_id', 'https://web.facebook.com/aghyadalbalkhi/');
-
                     }
-
-
                 }
             ).catch(error => console.log("here", error))
 

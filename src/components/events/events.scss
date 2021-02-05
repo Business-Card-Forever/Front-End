@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.bigContainer{
+
+background-image: url('https://wallpapercave.com/wp/wp2925459.png');
+background-repeat: no-repeat;
+background-size: cover; 
+text-align: center;
+}
+
+.cover {
+background-color: rgb(84, 107, 209);
+height: 360px;
+// background-image: url('https://goo.gl/NA3iQP');
+background-position: center center;
+background-size: cover;
+margin-bottom: 5%;
+
+.heading {
+font-family: 'Telefon Black';
+font-size: 243px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+text-align: center;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+color: #ccc;
+transition: font-size 0.3s;
+}
+
+.heading::first-letter {
+    color: #020202;
+}
+}
+
+
+section {
+display: grid;
+grid-gap: 0;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas:
+"main main"
+"event event";
+background-image: url(https://s3.ca-central-1.amazonaws.com/image-web-frankie/Music+show.jpg);
+background-size: cover;
+background-position: center;
+min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+section {
+grid-template-areas:
+    "main event"
+    "main event";
+}
+}
+
+.leftBox {
+grid-area: main;
+padding: 50px;
+box-sizing: border-box;
+}
+
+section .leftBox .content {
+color: #fff;
+background-color: rgba(37, 30, 30, 0.5);
+padding: 40px;
+transition: 0.5s;
+border-radius: 20px;
+}
+
+section .leftBox .content:hover {
+background-color: #494e92;
+}
+
+section .leftBox .content h1 {
+margin: 0;
+padding: 0;
+font-size: 50px;
+text-transform: uppercase;
+}
+
+section .leftBox .content p {
+margin: 10px 0 0;
+padding: 0;
+}
+
+section .events {
+border-radius: 20px;
+grid-area: event;
+background-color: rgba(0, 0, 0, 0.5);
+box-sizing: border-box;
+}
+
+section .events ul {
+margin: 0;
+padding: 40px;
+list-style: none;
+}
+
+section .events ul li {
+background-color: #fff;
+box-sizing: border-box;
+display: grid;
+grid-template-columns: 30% 1fr;
+grid-template-rows: 1fr;
+grid-gap: 0;
+grid-template-areas:
+"time time"
+"detail detail";
+margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+section .events ul li {
+grid-template-areas:
+    "time detail"
+    "time detail";
+    border-radius: 20px;
+}
+}
+
+section .events ul li .time {
+grid-area: time;
+position: relative;
+padding: 8% 40%;
+background-color: #262626;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+transition: 0.5s;
+}
+
+section .events ul li:hover .time {
+background-color: #382ec5;
+}
+
+section .events ul li .time h2 {
+margin: 0;
+padding: 0;
+color: #fff;
+font-size: 60px;
+line-height: 30px;
+}
+
+section .events ul li .time h2 span {
+font-size: 30px;
+}
+
+section .events ul li .details {
+grid-area: detail;
+padding: 20px 20px 32px;
+background-color: #fff;
+box-sizing: border-box;
+}
+
+section .events ul li .details h3 {
+margin: 0;
+padding: 0;
+font-size: 22px;
+}
+
+section .events ul li .details p {
+margin: 10px 0 0;
+padding: 0;
+font-size: 16px;
+}
+
+section .events ul li .details a {
+display: inline-block;
+text-decoration: none;
+padding: 10px 15px;
+border: 2px solid #262626;
+margin-top: 16px;
+font-size: 18px;
+transition: 0.5s;
+}
+
+section .events ul li .details a:hover {
+background-color: #e91e63;
+color: #fff;
+border-color: #e91e63;
+}
+
+.empDiv{
+    margin-top: 5%;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    animation: event 1.5s;
+}
+
+
+@keyframes event {
+
+
+    from {
+
+        opacity: 0;
+        transform: scaleX(7);
+    }
+
+
+
+    to {
+
+        opacity: 5;
+        transform: rotateX(0);
+
+    }
+
+}
+
+
+.cover {
+    animation: eventX 1s;
+}
+
+
+@keyframes eventX {
+
+
+    from {
+
+        opacity: 0;
+        transform: scale(3);
+    }
+
+
+    to {
+
+        opacity: 5;
+        transform: rotateX(0);
+
+    }
+
+}
