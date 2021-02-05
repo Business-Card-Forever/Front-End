@@ -1,7 +1,8 @@
 import React, {useState, useRef} from 'react';
 import {Container, Card, CardContent, makeStyles, Grid, TextField, Button} from '@material-ui/core';
 import QRCode from 'qrcode';
-
+import Footer from "../footer/footer";
+import Header from "../header/header";
 
 function QrCodeGenerator() { 
     const [text, setText] = useState('');
@@ -23,6 +24,8 @@ function QrCodeGenerator() {
     }
 }
     return (
+        <>
+        <Header />
     <Container className={classes.conatiner}>
             <Card>
                 <h2 className={classes.title}> E-B Card QR Code Generator </h2>
@@ -43,6 +46,8 @@ function QrCodeGenerator() {
                 </CardContent>
             </Card>
     </Container>
+    <Footer />
+    </>
     );
 }
 
