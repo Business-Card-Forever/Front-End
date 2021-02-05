@@ -20,10 +20,15 @@ function App() {
     <>
     <div className="App">
 
-    <Dashboard/>
-    <DashboardCompany/>
-      {/* <Footer /> */}
-    </div>
+    <Header />
+    {/* <Login/> */}
+    {/* <Events/> */}
+      <RegistrationForm/>
+
+      <Recent/>
+      <How/>
+      <Footer />
+      </div>
     </>
   );
 }

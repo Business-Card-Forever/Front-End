@@ -53,7 +53,7 @@ class DashboardCompany extends React.Component {
                                 </Form.Row>
                                 <Form.Row>
 
-                                    <Form.Control placeholder=" ASAC" name='company_name' className='rows' name='Number of employee' />
+                                    <Form.Control placeholder=" ASAC" name='company_name' className='rows' name='Number of employee' required />
 
                                 </Form.Row>
 
@@ -62,7 +62,7 @@ class DashboardCompany extends React.Component {
                                 </Form.Row>
                                 <Form.Row>
 
-                                    <Form.Control placeholder=" amman-jordan" name='company_address' className='rows' name='Number of employee' />
+                                    <Form.Control placeholder=" amman-jordan" name='company_address' className='rows' name='Number of employee' required />
 
                                 </Form.Row>
 
@@ -71,7 +71,7 @@ class DashboardCompany extends React.Component {
                                 </Form.Row>
                                 <Form.Row>
 
-                                    <Form.Control placeholder="Information Technology" name='industry' className='rows' name='Number of employee' />
+                                    <Form.Control placeholder="Information Technology" name='industry' className='rows' name='Number of employee'  required/>
 
                                 </Form.Row>
 
@@ -80,7 +80,7 @@ class DashboardCompany extends React.Component {
                                 </Form.Row>
                                 <Form.Row>
 
-                                    <Form.Control placeholder="asac.ltuc@gmail.com" name='email' className='rows' name='Number of employee' />
+                                    <Form.Control placeholder="asac.ltuc@gmail.com" name='email' className='rows' name='Number of employee' required />
 
                                 </Form.Row>
                             </Form>
@@ -94,21 +94,21 @@ class DashboardCompany extends React.Component {
                                 </Form.Row>
                                 <Form.Row>
 
-                                    <Form.Control placeholder="jhjfhjfjfhfj" name='about_company' className='rows' name='Number of employee' />
+                                    <Form.Control placeholder="jhjfhjfjfhfj" name='about_company' className='rows' name='Number of employee' required />
 
                                 </Form.Row>
                                 <Form.Row>
                                     <label className='l' > Number of employee </label>
                                 </Form.Row>
                                 <Form.Row>
-                                    <Form.Control placeholder="4-50" className='rows' name='number_of_employee' />
+                                    <Form.Control placeholder="4-50" className='rows' name='number_of_employee' required />
                                 </Form.Row>
                                 <Form.Row>
                                     <label className='l' > Lunch Date  </label>
                                 </Form.Row>
                                 <Form.Row>
 
-                                    <Form.Control placeholder="4-10-1998" name='lunch_date' type='date' className='rows' />
+                                    <Form.Control placeholder="4-10-1998" name='lunch_date' type='date' className='rows'  required/>
 
                                 </Form.Row>
 

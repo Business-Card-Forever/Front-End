@@ -61,7 +61,7 @@ class Dashboard extends React.Component {
                 </Form.Row>
                 <Form.Row>
 
-                    <Form.Control placeholder=" hadeel hussam" name='full_name' className='rows'  />
+                    <Form.Control placeholder=" hadeel hussam" name='full_name' className='rows' required />
 
                 </Form.Row>
 
@@ -69,13 +69,13 @@ class Dashboard extends React.Component {
                     <label className='l' > Birthday </label>
                 </Form.Row>
                 <Form.Row>
-                    <Form.Control placeholder=" 10-1-2010"  name='birthday' type='date' className='rows'  />
+                    <Form.Control placeholder=" 10-1-2010"  name='birthday' type='date' className='rows'  required/>
                 </Form.Row>
                 <Form.Row>
                     <label className='l'> City </label>
                 </Form.Row>
                 <Form.Row>
-                    <Form.Control placeholder="Amman" name='city' className='rows'  />
+                    <Form.Control placeholder="Amman" name='city' className='rows' required />
 
                 </Form.Row>
             </Form>
@@ -87,20 +87,20 @@ class Dashboard extends React.Component {
                     <label className='l'> Email </label>
                 </Form.Row>
                 <Form.Row>
-                    <Form.Control placeholder="m.omar@gmail.com" name='email' className='rows'  />
+                    <Form.Control placeholder="hadeelhh@gmail.com" name='email' className='rows'  required/>
                 </Form.Row>
                 <Form.Row>
                     <label className='l' > About Me  </label>
                 </Form.Row>
                 <Form.Row>
-                    <Form.Control  type='textarea' placeholder="software engineering and full  stack web development " name='aboutme' className='rows'  />
+                    <Form.Control  type='textarea' placeholder="software engineering and full  stack web development " name='aboutme' className='rows' required />
                 </Form.Row>
                 <Form.Row>
                     <label className='l'> Major </label>
                 </Form.Row>
                 <Form.Row>
 
-                    <Form.Control placeholder="Software Engineering" name='major' className='rows'  />
+                    <Form.Control placeholder="Software Engineering" name='major' className='rows'  required />
 
                 </Form.Row>
             </Form>
