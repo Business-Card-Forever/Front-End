@@ -22,7 +22,7 @@ const Footer = props => {
     
                     
                     <Row>
-                        <Col xs={12} md={12} xl={12} lg={12} className="social-media justify-content-center text-center">
+                        <Col xs={12} md={12} xl={12} lg={12} className="social-media justify-content-center text-center rights">
                             <p className="rights">Email: info@E-BCard.com <span className="span-col">|</span> Phone: +962-788703716 <br/> Copyright ©2021 Reserved For E-BCard Team</p>
                         </Col>
                     </Row>
