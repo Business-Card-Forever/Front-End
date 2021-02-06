@@ -31,7 +31,7 @@ const Events = props => {
             </div>
             <div className="omaren">
 
-                <section>
+                <section className="ayshi">
 
                     <div className="leftBox">
                         <div className="content">

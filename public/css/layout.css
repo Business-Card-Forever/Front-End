@@ -237,9 +237,11 @@ ul#nav li.current a { color: #fe6928; }
 
 #resume {
    background: #ebf2ec;
-   padding-top: 90px;
-   padding-bottom: 72px;
-   overflow: hidden;
+    padding-top: 90px;
+    /* padding-bottom: 72px; */
+    overflow: hidden;
+    margin: 50px;
+    border: double;
 }
 
 #resume a, #resume a:visited  { color: #0762f9; }
@@ -416,11 +418,11 @@ ul#nav li.current a { color: #fe6928; }
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
+/* #portfolio {
    background: #ebeeee;
    padding-top: 90px;
    padding-bottom: 60px;
-}
+} */
 #portfolio h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
