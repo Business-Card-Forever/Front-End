@@ -38,7 +38,7 @@ transition: font-size 0.3s;
 display: grid;
 grid-gap: 0;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+// grid-template-rows: 1fr 1fr;
 grid-template-areas:
 "main main"
 "event event";
