@@ -14,60 +14,28 @@ function signIn(props) {
         <div className="body-login1">
             <div className="main-signup-personally">
                 <img className="signup" alt='img' align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
+                <h2 className="logo-test" align="center">QR Registration</h2>
                 <form className="form-signup">
                     <label align="center">Full Name</label>
-                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your full name"/>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your full name" required />
                     <label align="center">Email Adress</label>
-                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your email adress"/>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your email adress" required />
                     <label align="center">User Password</label>
-                    <input type="password" name="password" className="pass1" align="center" placeholder="capital letters recommended"/>
+                    <input type="password" name="password" className="pass1" align="center" placeholder="capital letters recommended" required />
                     <label align="center">User Adress</label>
-                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your city "/>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your city " required />
                     <label align="center">User Birthday</label>
-                    <input type="date" name="username" className="un-signup" align="center" placeholder="enter your birthday"/>
+                    <input type="date" name="username" className="un-signup" align="center" placeholder="enter your birthday" required />
                     <label align="center">User Major</label>
-                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your major"/>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your major" required />
                     <label align="center" for="w3review">A brief about you</label>
-                    <textarea className="abrief" name="w3review" rows="4" cols="50"></textarea>
+                    <textarea className="abrief" name="w3review" rows="4" cols="50" required ></textarea>
     
                 <div className="div-register1"><a  className="submit2" align="center">Sign Up</a></div>
                 </form>
             </div>
             </div>
-            <div className="body-login1">
-            <div className="main-signup-company">
-                <img className="signup" alt='img' align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
-                <form className="form-signup">
-                <label>Company Name</label>
-                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter company name"/>
-                    <label align="center">Company Email</label>
-                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter company email"/>
-                    <label align="center">Company Password</label>
-                    <input type="password" name="password" className="pass1" align="center" placeholder="capital letters recommended"/>
-                    <label align="center">Company  Adress</label>
-                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your city "/>
-                    <label align="center">Establishment Date</label>
-                    <input type="date" name="username" className="un-signup" align="center" placeholder="enter your birthday"/>
-                    <label align="center">Industry</label>
-                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your industry"/>
-                    <label align="center">Number of Employers</label>
-                    <input type="number" name="username" className="un-signup" align="center" placeholder="enter number of employers"/>
-                    <label align="center">Major</label>
-                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your major"/>
-                    <label align="center" for="w3review">A brief about the company</label>
-                    <textarea className="abrief" name="w3review" rows="4" cols="50" required></textarea>
-                    <div className="div-register1"><a  className="submit2" align="center">Register</a></div>
-                </form>
-            </div>
-            </div>
             </section>
-            <div class="fullscreen-bg">
-    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-        <source src="video/big_buck_bunny.webm" type="video/webm"></source>
-        <source src="video/big_buck_bunny.mp4" type="video/mp4"></source>
-        <source src="video/big_buck_bunny.ogv" type="video/ogg"></source>
-    </video>
-</div>
         <Footer />
         </>
     );
