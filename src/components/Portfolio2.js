@@ -9,7 +9,7 @@ import Resume from './Resume';
 // import Contact from './Contact';
 import Portfolio from './Portfolio';
 
-class Portfolio2 extends Component {
+class Portfolio2 extends React.Component {
 
   constructor(props){
     super(props);

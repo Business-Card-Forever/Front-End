@@ -82,9 +82,6 @@ class Header extends React.Component {
                     <Nav.Link style={style} href="/signup">SignUp</Nav.Link>
                 </Navbar>
 
-             
-                <div className="dash-emptyDiv"></div>
-
             </div>
         )
 
