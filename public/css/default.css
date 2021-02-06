@@ -533,7 +533,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 textarea,
-select {
+/* select {
    display: block;
    padding: 18px 15px;
    margin: 0 0 24px 0;
@@ -547,7 +547,7 @@ select {
 	color: #647373;
 	background: #D3D9D9;
 
-}
+} */
 
 /* select { padding: 0;
    width: 220px;
@@ -558,7 +558,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
    color: #B3B7BC;
-	background-color: #3d4145;
+	/* background-color: #3d4145; */
 }
 
 textarea { min-height: 220px; }
@@ -567,7 +567,7 @@ label,
 legend {
    font: 16px/24px 'opensans-bold', sans-serif;
 	margin: 12px 0;
-   color: #3d4145;
+   color: beige;
    display: block;
 }
 label span,
@@ -645,7 +645,7 @@ input[type="checkbox"] { display: inline; }
 .row .nine        { width: 75%; }
 .row .ten         { width: 83.33333%; }
 .row .eleven      { width: 91.66667%; }
-.row .twelve      { width: 100%; }
+/* .row .twelve      { width: 100%; } */
 
 /* Offsets */
 .row .offset-1    { margin-left: 8.33333%; }

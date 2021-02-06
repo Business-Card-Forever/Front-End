@@ -10,45 +10,57 @@ function signIn(props) {
     return (
         <>
         <Header />
-
-
-            <Form>
-                <Form.Row className="login-form">
-                <Form.Group as={Col} controlId="formGridEmail" id="loginpage">
-                    <Form.Label>Username</Form.Label><br/>
-                    <Form.Control type="text" placeholder="Enter username" />
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridPassword">
-                    <Form.Label>Company Name</Form.Label>
-                    <Form.Control type="text" placeholder="Enter Company Name" />
-                </Form.Group>
-            </Form.Row>
-            <Form.Row>
-                <Form.Group as={Col} controlId="formGridEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter Your Email" />
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Enter Your Password" />
-                </Form.Group>
-            </Form.Row>
-
-            <Form.Group controlId="formGridAddress1">
-                <Form.Label>Company Address</Form.Label>
-                <Form.Control placeholder="1234 Main St" />
-            </Form.Group>
-
-            <Form.Group controlId="formGridAddress2">
-                <Form.Label>Industry</Form.Label>
-                <Form.Control placeholder="Company industry" />
-            </Form.Group>
-            <Button variant="primary" type="submit">
-                Submit
-            </Button>
-        </Form>
+        <section>
+        <div className="body-login1">
+            <div className="main-signup-personally">
+                <img className="signup" alt='img' align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
+                <form className="form-signup">
+                    <label align="center">Full Name</label>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your full name"/>
+                    <label align="center">Email Adress</label>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your email adress"/>
+                    <label align="center">User Password</label>
+                    <input type="password" name="password" className="pass1" align="center" placeholder="capital letters recommended"/>
+                    <label align="center">User Adress</label>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your city "/>
+                    <label align="center">User Birthday</label>
+                    <input type="date" name="username" className="un-signup" align="center" placeholder="enter your birthday"/>
+                    <label align="center">User Major</label>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your major"/>
+                    <label align="center" for="w3review">A brief about you</label>
+                    <textarea className="abrief" name="w3review" rows="4" cols="50"></textarea>
+    
+                <div className="div-register1"><a  className="submit2" align="center">Sign Up</a></div>
+                </form>
+            </div>
+            </div>
+            <div className="body-login1">
+            <div className="main-signup-company">
+                <img className="signup" alt='img' align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
+                <form className="form-signup">
+                <label>Company Name</label>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter company name"/>
+                    <label align="center">Company Email</label>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter company email"/>
+                    <label align="center">Company Password</label>
+                    <input type="password" name="password" className="pass1" align="center" placeholder="capital letters recommended"/>
+                    <label align="center">Company  Adress</label>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your city "/>
+                    <label align="center">Establishment Date</label>
+                    <input type="date" name="username" className="un-signup" align="center" placeholder="enter your birthday"/>
+                    <label align="center">Industry</label>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your industry"/>
+                    <label align="center">Number of Employers</label>
+                    <input type="number" name="username" className="un-signup" align="center" placeholder="enter number of employers"/>
+                    <label align="center">Major</label>
+                    <input type="text" name="username" className="un-signup" align="center" placeholder="enter your major"/>
+                    <label align="center" for="w3review">A brief about the company</label>
+                    <textarea className="abrief" name="w3review" rows="4" cols="50" required></textarea>
+                    <div className="div-register1"><a  className="submit2" align="center">Register</a></div>
+                </form>
+            </div>
+            </div>
+            </section>
         <Footer />
         </>
     );
