@@ -3,18 +3,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Col,Button,Form,Image } from "react-bootstrap";
 import './UserForm.css';
 import img from './User-Profile-PNG-High-Quality-Image.png';
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 // import Portfolio2 from './components/Portfolio2';
 import { Link } from 'react-router-dom';
-// const Date = () => {
-//     const [startDate, setStartDate] = useState(new Date());
-//     return (
-//         <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
-//     );
-// };
+
+
+////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////
 
 
 function FormU(props){
@@ -86,35 +87,35 @@ function FormU(props){
                                         <Form.Row>
                                             <Form.Group as={Col} controlId="formGridFull_Name">
                                                     <Form.Label>Full Name</Form.Label>
-                                                        <Form.Control type="text" placeholder="Full Name" defaultValue={props.data.full_name} />
+                                                        <Form.Control type="text" name='full_name' placeholder="Full Name" onChange={inputChanged} defaultValue={props.data.full_name} />
                                             </Form.Group>
 
                                             <Form.Group as={Col} controlId="formGridEmail">
                                                 <Form.Label>Email</Form.Label>
-                                                <Form.Control type="email" placeholder="Enter email" defaultValue={props.data.email} />
+                                                <Form.Control type="email" placeholder="Enter email" name='email' onChange={inputChanged} defaultValue={props.data.email} />
                                             </Form.Group>
                                         </Form.Row>
 
                                         <Form.Row>
                                             <Form.Group as={Col} controlId="formGridCity">
                                                 <Form.Label>City</Form.Label>
-                                                <Form.Control placeholder="Ex. Amman" defaultValue={props.data.city} />
+                                                <Form.Control placeholder="Ex. Amman" name='city' onChange={inputChanged} defaultValue={props.data.city} />
                                             </Form.Group>
 
                                             <Form.Group as={Col} controlId="formGridMajor">
                                                 <Form.Label>Major</Form.Label>
-                                                <Form.Control placeholder="Ex. Computer Scenice" defaultValue={props.data.major} />
+                                                <Form.Control placeholder="Ex. Computer Scenice" name='major' onChange={inputChanged} defaultValue={props.data.major} />
                                             </Form.Group>
 
                                             <Form.Group as={Col} controlId="formGridBirthday">
                                                 <Form.Label>Birthday</Form.Label>
-                                                    <Form.Control type="text" placeholder="2//5/2021" defaultValue={props.data.birthday} />
+                                                    <Form.Control type="text" placeholder="2//5/2021" name='birthday' onChange={inputChanged} defaultValue={props.data.birthday} />
                                             </Form.Group>
                                         </Form.Row>
                                             
                                             <Form.Group controlId="aboutME.ControlTextarea">
                                                 <Form.Label>About Me</Form.Label>
-                                                <Form.Control as="textarea" rows={3} defaultValue={props.data.aboutme} />
+                                                <Form.Control as="textarea" rows={3} name='aboutme' onChange={inputChanged} defaultValue={props.data.aboutme} />
                                             </Form.Group>
 
                                         
@@ -122,7 +123,7 @@ function FormU(props){
                                             
                                         </Form.Row>
 
-                                            <Button variant="primary" type="submit">
+                                            <Button variant="primary" onClick={createNewProfile} type="submit">
                                                 Save
                                             </Button><br></br><br></br><br></br>
                                 </Form>
@@ -206,17 +207,11 @@ function FormU(props){
                                         Save
                                     </Button><br></br><br></br><br></br>
                                 </Form>                        
-
-
                             </Row>
-
-
                         </div>
                     </Col>
                 </Row>
             </Container>
-
-
         </div>
         <Footer />
         </>
@@ -293,6 +288,46 @@ class UserForm extends React.Component {
         ); 
     }
 }
+
+const cred = {}
+
+const createNewProfile = (event) => {
+    event.preventDefault();
+    console.log(cred)
+    
+    cred['userinfo'] = localStorage.getItem('user_id');
+    let us_inf=localStorage.getItem('userinfo');
+    return fetch(`http://e-bcard.herokuapp.com/api/userinfo/${us_inf}`, {
+        method: 'PUT',
+        body: cred
+    }).then(response => response.json()).then((json) => {
+        alert('done')
+    })
+    .catch(error => error);
+}
+
+
+const inputChanged = event =>{
+    cred[event.target.name] = event.target.value;
+    console.log(cred)
+    
+
+}
+
+
+// this.handleSubmit = event =>{
+//     console.log('heheheheh')
+//     event.preventDefault();
+//     console.log('User name : ' + this.state.name)
+//     console.log('User Email : ' + this.state.email)
+//     const url ='';
+//     const data = { name:this.state.name, email:this.state.email }
+//     fetch(url, { method: 'POST', // or ‘PUT’
+//     body: JSON.stringify(data), // data can be `string` or {object}!
+//     headers:{ 'Content-Type': 'application/json' } })
+//     .then(res => res.json())
+//     .catch(error => console.error('Error', error))
+//     .then(response => console.log('Success', response)); }
 
 
 export default UserForm;
