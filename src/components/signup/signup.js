@@ -10,7 +10,7 @@ function signIn(props) {
     return (
         <>
         <Header />
-        <section>
+        <section className="signup-section">
         <div className="body-login1">
             <div className="main-signup-personally">
                 <img className="signup" alt='img' align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
@@ -61,6 +61,13 @@ function signIn(props) {
             </div>
             </div>
             </section>
+            <div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="video/big_buck_bunny.webm" type="video/webm"></source>
+        <source src="video/big_buck_bunny.mp4" type="video/mp4"></source>
+        <source src="video/big_buck_bunny.ogv" type="video/ogg"></source>
+    </video>
+</div>
         <Footer />
         </>
     );

@@ -89,6 +89,7 @@ class Login extends Component {
             <div className="body-login">
             <div className="main">
                 <img className="sign" alt='img' align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
+                <h2 className="logo-test" align="center">QR Code</h2>
                 <form className="form1">
                 
                     <input type="text" name="username" className="un" align="center" placeholder="Username"
@@ -99,7 +100,7 @@ class Login extends Component {
                     onChange={this.inputChanged}/>
 
                 <div className="div-login"><a onClick={this.login} className="submit" align="center">Login</a></div>
-                <div className="div-register"><a onClick={this.register} className="submit2" align="center">Register</a></div>
+                {/* <div className="div-register"><a onClick={this.register} className="submit2" align="center">Register</a></div> */}
                 </form>
             </div>
             </div>
