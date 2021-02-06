@@ -29,7 +29,7 @@ class Login extends Component {
         ).catch(error => console.log("here",error));
 
         ///////////// Get User ID///////////////////////////////
-        fetch('https://e-bcard.herokuapp.com/api/users/',{
+        fetch('http://127.0.0.1:8000/api/users/',{
             method:'GET',
             headers:{'Content-Type':'application/json'},
         })
