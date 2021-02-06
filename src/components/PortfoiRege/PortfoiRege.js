@@ -1,5 +1,4 @@
 import { Container, Row } from "react-bootstrap";
-// import {Form  } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import Form from 'react-bootstrap/Form'
 import { Col } from "react-bootstrap";
@@ -10,52 +9,8 @@ class PortfoiRege extends React.Component {
     render() {
         return (
             <>
-                {/* <Form>
-                    <Form.Row>
-                        <Form.Group as={Col} controlId="formGridEmail">
-                            <Form.Label>Full Name</Form.Label>
-                            <Form.Control type="text" name="fullname" placeholder="Enter Full Name" />
-                        </Form.Group>
-
-                        <Form.Group as={Col} controlId="formGridEmail">
-                            <Form.Label>Email</Form.Label>
-                            <Form.Control name='email' type="email" placeholder="Enter email" />
-                        </Form.Group>
-                    </Form.Row>
-
-                    <Form.Group controlId="formGridAddress">
-                        <Form.Label>Address</Form.Label>
-                        <Form.Control name='address' placeholder="1234 Main St" />
-                    </Form.Group>
-                    <Form.Group controlId="formGridAbout">
-                        <Form.Label>About</Form.Label>
-                        <Form.Control name='About' placeholder="About About About About About" />
-                    </Form.Group>
-
-
-                    <Form.Group controlId="formGridAbout">
-                        <Form.Label>Major</Form.Label>
-                        <Form.Control name='major' placeholder="Software Engineering " />
-                    </Form.Group>
-
-                    <Form.Row>
-                        <Form.Group as={Col} controlId="formGridCity">
-                            <Form.Label>Birthday</Form.Label>
-                            <Form.Control name='Birthday' type='date' placeholder="4-10-1998 " />
-
-                        </Form.Group>
-
-
-
-
-                    </Form.Row>
-
-                    <Button variant="primary" type="submit">Submit</Button>
-                </Form>
-
- */}
-  <Header />            
-     <Container style={{ marginLeft: '1%', marginRight: '5%' }}>
+                <Header />
+                <Container style={{ marginLeft: '1%', marginRight: '5%' }}>
                     <Col>
                         <Row sm={2} style={{ marginLeft: 150, paddingBottom: 20 }}>
                             <Form.Label>Full Name</Form.Label>
@@ -83,18 +38,12 @@ class PortfoiRege extends React.Component {
                         </Row>
 
                     </Col>
-
-
-
-
                 </Container>
                 <Footer />
             </>
 
         );
     }
-
-
 }
 
 export default PortfoiRege;

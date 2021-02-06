@@ -1,6 +1,5 @@
 import Header from './components/header/header';
 import Login from './components/login/login';
-// import SignIn from './components/signin/signin';
 import Features from './components/features/features';
 import Dashboard from "./components/dashboard/dashboard";
 import DashboardCompany from './components/dashboard_c/dashboard_c';

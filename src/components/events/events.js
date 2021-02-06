@@ -4,7 +4,6 @@ import './events.scss';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 
-// import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 const Events = props => {

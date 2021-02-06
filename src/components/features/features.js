@@ -1,10 +1,6 @@
 import React from "react";
 import './features.css';
 import py1 from '../../img/qr.jpg'
-import py2 from '../../img/two.png'
-import py3 from '../../img/three.png'
-import py4 from '../../img/four.png'
-import py5 from '../../img/py5.png'
 
 class Features extends React.Component {
     constructor(props) {

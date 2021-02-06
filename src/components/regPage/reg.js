@@ -1,19 +1,11 @@
 import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBInput } from 'mdbreact';
 import './reg.css'
-
-// import logo from '../../img/logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Login from '../login/login';
-// import SignUp from '../signup/signup';
-// import VedioBG from '../main/main'
-
-import Header from '../header/header'
 
 const RegistrationForm = () => {
-    return (
-      <>
-      {/* <Header /> */}
+  return (
+    <>
       <MDBContainer>
         <MDBRow>
           <MDBCol md='6'>
@@ -54,7 +46,7 @@ const RegistrationForm = () => {
                   required
                   labelClass='white-text'
                 />
-             
+
                 <MDBInput
                   label='Company Email'
                   group
@@ -79,7 +71,7 @@ const RegistrationForm = () => {
                   required
                   labelClass='white-text'
                 />
-                 <MDBInput
+                <MDBInput
                   label=' About Company '
                   group
                   type='white-text'
@@ -87,7 +79,7 @@ const RegistrationForm = () => {
                   required
                   labelClass='white-text'
                 />
-                  <MDBInput
+                <MDBInput
                   label=' Number of   Employee '
                   group
                   type='white-text'
@@ -95,7 +87,7 @@ const RegistrationForm = () => {
                   required
                   labelClass='white-text'
                 />
-                  <MDBInput
+                <MDBInput
                   label='Lunch Date '
                   group
                   type='white-text'
@@ -114,7 +106,7 @@ const RegistrationForm = () => {
                       rounded
                       type='button'
                       className='btn-block z-depth-1'
-                      
+
                     >
                       Register
                     </MDBBtn>
@@ -124,7 +116,7 @@ const RegistrationForm = () => {
                   <p className='font-small white-text d-flex justify-content-end'>
                     Have an account?
                     <a href='#' className='green-text ml-1 font-weight-bold'>
-                      Login In 
+                      Login In
                     </a>
                   </p>
                 </MDBCol>
@@ -132,14 +124,7 @@ const RegistrationForm = () => {
             </MDBCard>
           </MDBCol>
         </MDBRow>
-
-
-
-              <div className="empty-reg">  </div>
-
-
-
-
+        <div className="empty-reg">  </div>
         <MDBRow>
           <MDBCol md='6'>
             <MDBCard
@@ -165,14 +150,12 @@ const RegistrationForm = () => {
                 <MDBInput
                   label='Full Name'
                   group
-                  
+
                   type='text'
                   validate
                   required
                   labelClass='white-text'
                 />
-               
-             
                 <MDBInput
                   label='Your email'
                   group
@@ -189,8 +172,8 @@ const RegistrationForm = () => {
                   required
                   labelClass='white-text'
                 />
-                 <MDBInput
-                  label= ' Your City'
+                <MDBInput
+                  label=' Your City'
                   group
                   type='text'
                   validate
@@ -230,7 +213,7 @@ const RegistrationForm = () => {
                       rounded
                       type='button'
                       className='btn-block z-depth-1'
-                      >
+                    >
                       Register
                     </MDBBtn>
                   </div>
@@ -248,8 +231,8 @@ const RegistrationForm = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      </>
-    );
-  };
-  
-  export default RegistrationForm;
+    </>
+  );
+};
+
+export default RegistrationForm;

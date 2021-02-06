@@ -5,7 +5,6 @@ import './index.css';
 import App from './App';
 import Dashboard from './components/dashboard/dashboard';
 import Dashboard_c from './components/dashboard_c/dashboard_c';
-// import How from './components/HowitWork/how';
 import Features from './components/features/features';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
@@ -34,7 +33,6 @@ const routing = (
             <Route exact path="/" component={App} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/dashboard_c" component={Dashboard_c} />
-            {/* <Route exact path="/how" component={How} /> */}
             <Route exact path="/features" component={Features} />
             <Route exact path="/footer" component={Footer} />
             <Route exact path="/header" component={Header} />
@@ -49,14 +47,8 @@ const routing = (
             <Route exact path="/userform" component={UserForm} />
             <Route exact path="/Portfolio2" component={Portfolio2} />
             <Route exact path="/eeeeeee" component={eeeeeee} />
-            
-            
-
             <Route exact path="/eventForm" component={CreateEvents} />
-
         </Switch>
-        
-        
     </React.StrictMode>
 </Router>
 );

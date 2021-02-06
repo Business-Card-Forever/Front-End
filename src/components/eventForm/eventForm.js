@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-// import logo from '../../img/logo.png';
-import { Navbar, Nav, Button, Form, Modal, Col, Row } from 'react-bootstrap';
-// import header from '../header/header'
 
 
 class CreateEvents extends Component {
@@ -52,12 +49,6 @@ class CreateEvents extends Component {
 						   <label htmlFor="EventsSubject">Location</label>
 						   <input type="text" defaultValue="" size="35" id="EventsSubject" name="EventsSubject" onChange={this.handleChange}/>
                   </div>
-
-                  {/* <div>
-						   <label htmlFor="EventsSubject">Location</label>
-						   <input type="text" defaultValue="" size="35" id="EventsSubject" name="EventsSubject" onChange={this.handleChange}/>
-                  </div> */}
-
                   <div>
 						   <label htmlFor="EventsEmail">Date <span className="required">*</span></label>
 						   <input type="date" defaultValue="" size="35" id="EventsEmail" name="EventsEmail" onChange={this.handleChange}/>

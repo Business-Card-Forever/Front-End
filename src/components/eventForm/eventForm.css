@@ -40,8 +40,7 @@
  }
  #contact .header-col { padding-top: 6px; }
  
- 
- /* contact form */
+
  #contact form { margin-bottom: 30px; }
  #contact label {
     font: 15px/24px 'opensans-bold', sans-serif;
@@ -112,8 +111,7 @@
     top: 17px;
  }
  
- 
- /* Twitter Feed */
+
  #twitter {
     margin-top: 12px;
     padding: 0;

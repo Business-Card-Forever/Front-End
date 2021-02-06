@@ -53,12 +53,6 @@ class CreateEvents extends Component {
 						   <label htmlFor="EventsSubject">Location</label>
 						   <input type="text" defaultValue="" size="35" id="EventsSubject" name="EventsSubject" onChange={this.handleChange}/>
                   </div>
-
-                  {/* <div>
-						   <label htmlFor="EventsSubject">Location</label>
-						   <input type="text" defaultValue="" size="35" id="EventsSubject" name="EventsSubject" onChange={this.handleChange}/>
-                  </div> */}
-
                   <div>
 						   <label htmlFor="EventsEmail">Date <span className="required">*</span></label>
 						   <input type="date" defaultValue="" size="35" id="EventsEmail" name="EventsEmail" onChange={this.handleChange}/>
