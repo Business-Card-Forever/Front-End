@@ -16,7 +16,7 @@ function Recent(props) {
                     <div className="cards-app">
                         <div className="pcard">
                             <img className='profile-bg profile-bg-again' alt='img' src="https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVpbGRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"></img>
-                            <img className="avatar" alt='img' src="https://assets.vogue.com/photos/5876fe0a8a28e998768824d3/4:3/w_795,h_597,c_limit/david-gandy.jpg" alt="" srcset=""></img>
+                            <img className="avatar" alt='img' src="https://cdn4.iconfinder.com/data/icons/forum-buttons-and-community-signs-1/794/profile-3-512.png" alt="" srcset=""></img>
                             <p className="name">{props.data[4].full_name}</p>
                             <p className="desig">Major: {props.data[4].major} <br></br>Email: {props.data[4].email} </p>
                             <p className="desig">{props.data[4].aboutme}</p>
@@ -31,7 +31,7 @@ function Recent(props) {
                     <div className="cards-app">
                         <div className="pcard">
                             <img className='profile-bg profile-bg-again' alt='img' src="https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVpbGRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"></img>
-                            <img className="avatar" alt='img' src="https://assets.vogue.com/photos/5876fe0a8a28e998768824d3/4:3/w_795,h_597,c_limit/david-gandy.jpg" alt="" srcset=""></img>
+                            <img className="avatar" alt='img' src="https://cdn4.iconfinder.com/data/icons/forum-buttons-and-community-signs-1/794/profile-3-512.png" alt="" srcset=""></img>
                             <p className="name">{props.data[3].full_name}</p>
                             <p className="desig">Major: {props.data[3].major} <br></br>Email: {props.data[3].email} </p>
                             <p className="desig">{props.data[3].aboutme}</p>
@@ -46,7 +46,7 @@ function Recent(props) {
                     <div className="cards-app">
                         <div className="pcard">
                             <img className='profile-bg profile-bg-again' alt='img' src="https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVpbGRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"></img>
-                            <img className="avatar" alt='img' src="https://assets.vogue.com/photos/5876fe0a8a28e998768824d3/4:3/w_795,h_597,c_limit/david-gandy.jpg" alt="" srcset=""></img>
+                            <img className="avatar" alt='img' src="https://cdn4.iconfinder.com/data/icons/forum-buttons-and-community-signs-1/794/profile-3-512.png" alt="" srcset=""></img>
                             <p className="name">{props.data[2].full_name}</p>
                             <p className="desig">Major: {props.data[2].major} <br></br>Email: {props.data[2].email} </p>
                             <p className="desig">{props.data[2].aboutme}</p>
@@ -61,7 +61,7 @@ function Recent(props) {
                     <div className="cards-app">
                         <div className="pcard">
                             <img className='profile-bg profile-bg-again' alt='img' src="https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVpbGRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"></img>
-                            <img className="avatar" alt='img' src="https://assets.vogue.com/photos/5876fe0a8a28e998768824d3/4:3/w_795,h_597,c_limit/david-gandy.jpg" alt="" srcset=""></img>
+                            <img className="avatar" alt='img' src="https://cdn4.iconfinder.com/data/icons/forum-buttons-and-community-signs-1/794/profile-3-512.png" alt="" srcset=""></img>
                             <p className="name">{props.data[1].full_name}</p>
                             <p className="desig">Major: {props.data[1].major} <br></br>Email: {props.data[1].email} </p>
                             <p className="desig">{props.data[1].aboutme}</p>
@@ -76,7 +76,7 @@ function Recent(props) {
                     <div className="cards-app">
                         <div className="pcard">
                             <img className='profile-bg profile-bg-again' alt='img' src="https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVpbGRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"></img>
-                            <img className="avatar" alt='img' src="https://images.squarespace-cdn.com/content/v1/5442b6cce4b0cf00d1a3bef2/1578612969629-6RT438T6RBWR27IDFRPZ/ke17ZwdGBToddI8pDm48kIAZ5CWDgAf_tKNKdYtI7ZtZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpx78nW6aw6q_OBEgbzlBDLLqtzO1m_sKf16hJRhG3A2FkHtEA23RvFjTTKzL4c-UFU/Mens-Fair-Trade-Fashion-PACT" alt="" srcset=""></img>
+                            <img className="avatar" alt='img' src="https://cdn4.iconfinder.com/data/icons/forum-buttons-and-community-signs-1/794/profile-3-512.png" alt="" srcset=""></img>
                             <p className="name">{props.data[0].full_name}</p>
                             <p className="desig">Major: {props.data[0].major} <br></br>Email: {props.data[0].email} </p>
                             <p className="desig">{props.data[0].aboutme}</p>
