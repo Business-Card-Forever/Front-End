@@ -14,7 +14,7 @@ const Footer = props => {
 
                 <Container fluid>
                 <div className='container-div'>
-                    <Row>
+                    <Row className='fofo'>
                         <Col xs={12} md={12} xl={12} lg={12} className="social-media justify-content-center text-center">
                             <p className="follow">Follow us on:</p>
                             <a href="https://www.facebook.com" target='_blank' rel="noopener noreferrer" className="facebook social"> <FontAwesomeIcon icon={faFacebook} size="2x" /></a>
@@ -26,7 +26,7 @@ const Footer = props => {
                     </Row>
     
                     
-                    <Row>
+                    <Row className='fofo'>
                         <Col xs={12} md={12} xl={12} lg={12} className="social-media justify-content-center text-center rights">
                             <p className="rights">Email: info@E-BCard.com <span className="span-col">|</span> Phone: +962-788703716 <br/> Copyright ©2021 Reserved For E-BCard Team</p>
                         </Col>
