@@ -143,27 +143,27 @@ function FormU(props){
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="formGridOrg_Name">
                                             <Form.Label>Orgniaiztion Name</Form.Label>
-                                                <Form.Control type="text" placeholder="Orgniaiztion Name" defaultValue={user_data.org_name} />
+                                                <Form.Control type="text" name='org_name' onChange={WorkChanged} placeholder="Orgniaiztion Name" defaultValue={user_data.org_name} />
                                     </Form.Group>
 
                                     <Form.Group as={Col} controlId="formGridPosition">
                                         <Form.Label>Position</Form.Label>
-                                        <Form.Control type="text" placeholder="Position" defaultValue={user_data.position} />
+                                        <Form.Control type="text" name='position' onChange={WorkChanged} placeholder="Position" defaultValue={user_data.position} />
                                     </Form.Group>
                                     <Form.Group as={Col} controlId="formGridDate">
                                         <Form.Label>Date</Form.Label>
-                                        <Form.Control placeholder="Ex. 2/5/2021" defaultValue={user_data.date} />
+                                        <Form.Control placeholder="Ex. 2/5/2021" name='date' onChange={WorkChanged} defaultValue={user_data.date} />
                                     </Form.Group>
                                 </Form.Row>                                    
                                     <Form.Group controlId="aboutME.ControlDescription">
                                         <Form.Label>Description</Form.Label>
-                                        <Form.Control as="textarea" rows={3} defaultValue={user_data.desc} />
+                                        <Form.Control as="textarea" rows={3} name='desc' onChange={WorkChanged} defaultValue={user_data.desc} />
                                     </Form.Group>
                                 <Form.Row>
                                     
                                 </Form.Row>
 
-                                    <Button variant="primary" type="submit">
+                                    <Button variant="primary" onClick={WorkNewProfile} type="submit">
                                         Save
                                     </Button><br></br><br></br><br></br>
                                 </Form>
@@ -183,27 +183,27 @@ function FormU(props){
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="formGridinstitute_name">
                                             <Form.Label>Institute Name</Form.Label>edu_data
-                                                <Form.Control type="text" placeholder="Ex . PHILADELPHIA UNIVERSITY" defaultValue={edu_data.institute_name} />
+                                                <Form.Control type="text" name='institute_name' onChange={EduChanged} placeholder="Ex . PHILADELPHIA UNIVERSITY" defaultValue={edu_data.institute_name} />
                                     </Form.Group>
 
                                     <Form.Group as={Col} controlId="formGridDegree">
                                         <Form.Label>Degree</Form.Label>
-                                        <Form.Control type="text" placeholder="Ex. BSC in Computer Science" defaultValue={edu_data.degree} />
+                                        <Form.Control type="text" name='degree' onChange={EduChanged} placeholder="Ex. BSC in Computer Science" defaultValue={edu_data.degree} />
                                     </Form.Group>
                                     <Form.Group as={Col} controlId="formGridDate">
                                         <Form.Label>Date</Form.Label>
-                                        <Form.Control placeholder="Ex. 2/5/2021"  defaultValue={edu_data.date}  />
+                                        <Form.Control placeholder="Ex. 2/5/2021" name='date' onChange={EduChanged}  defaultValue={edu_data.date}  />
                                     </Form.Group>
                                 </Form.Row>                                    
                                     <Form.Group controlId="aboutME.ControlDescription">
                                         <Form.Label>Description</Form.Label>
-                                        <Form.Control as="textarea" rows={3}  defaultValue={edu_data.desc}  />
+                                        <Form.Control as="textarea" rows={3} name='desc' onChange={EduChanged}  defaultValue={edu_data.desc}  />
                                     </Form.Group>
                                 <Form.Row>
                                     
                                 </Form.Row>
 
-                                    <Button variant="primary" type="submit">
+                                    <Button variant="primary" onClick={EduNewProfile} type="submit">
                                         Save
                                     </Button><br></br><br></br><br></br>
                                 </Form>                        
@@ -290,18 +290,25 @@ class UserForm extends React.Component {
 }
 
 const cred = {}
+const credwork={}
+const crededu={}
 
 const createNewProfile = (event) => {
     event.preventDefault();
     console.log(cred)
     
-    cred['userinfo'] = localStorage.getItem('user_id');
+    
     let us_inf=localStorage.getItem('userinfo');
-    return fetch(`http://e-bcard.herokuapp.com/api/userinfo/${us_inf}`, {
+    cred['userinfo'] = parseInt(localStorage.getItem('user_id'));
+    cred['id'] = parseInt(localStorage.getItem('userinfo'));
+    let url = `http://e-bcard.herokuapp.com/api/userinfo/${us_inf}/`;
+    console.log(url,cred)
+    return fetch(url, {
         method: 'PUT',
-        body: cred
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(cred)
     }).then(response => response.json()).then((json) => {
-        alert('done')
+        alert('done 1')
     })
     .catch(error => error);
 }
@@ -311,23 +318,68 @@ const inputChanged = event =>{
     cred[event.target.name] = event.target.value;
     console.log(cred)
     
-
 }
 
 
-// this.handleSubmit = event =>{
-//     console.log('heheheheh')
-//     event.preventDefault();
-//     console.log('User name : ' + this.state.name)
-//     console.log('User Email : ' + this.state.email)
-//     const url ='';
-//     const data = { name:this.state.name, email:this.state.email }
-//     fetch(url, { method: 'POST', // or ‘PUT’
-//     body: JSON.stringify(data), // data can be `string` or {object}!
-//     headers:{ 'Content-Type': 'application/json' } })
-//     .then(res => res.json())
-//     .catch(error => console.error('Error', error))
-//     .then(response => console.log('Success', response)); }
+///////////////////////////// Work Ex///////////////////////////////////////
+
+const WorkNewProfile = (event) => {
+    event.preventDefault();
+    console.log(credwork)
+    
+    
+    let work_data=localStorage.getItem('work_data');
+    credwork['user'] = parseInt(localStorage.getItem('user_id'));
+    credwork['id'] = parseInt(localStorage.getItem('work_data'));
+    let url = `http://e-bcard.herokuapp.com/api/workexperience/${work_data}/`;
+    console.log(url,credwork)
+    return fetch(url, {
+        method: 'PUT',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(credwork)
+    }).then(response => response.json()).then((json) => {
+        alert('done 2')
+    })
+    .catch(error => error);
+}
+
+
+const WorkChanged = event =>{
+    credwork[event.target.name] = event.target.value;
+    console.log(credwork)
+    
+}
+
+
+///////////////////////////// EDU ///////////////////////////////////////
+
+const EduNewProfile = (event) => {
+    event.preventDefault();
+    console.log(crededu)
+    
+    
+    let edu_data=localStorage.getItem('edu_data');
+    crededu['user'] = parseInt(localStorage.getItem('user_id'));
+    crededu['id'] = parseInt(localStorage.getItem('edu_data'));
+    let url = `http://e-bcard.herokuapp.com/api/eduction/${edu_data}/`;
+    console.log(url,crededu)
+    return fetch(url, {
+        method: 'PUT',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(crededu)
+    }).then(response => response.json()).then((json) => {
+        alert('done 2')
+    })
+    .catch(error => error);
+}
+
+
+const EduChanged = event =>{
+    crededu[event.target.name] = event.target.value;
+    console.log(crededu)
+    
+}
+
 
 
 export default UserForm;
