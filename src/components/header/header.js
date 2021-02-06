@@ -79,10 +79,8 @@ class Header extends React.Component {
                     </Form> */}
                     {/* <Login userLogin={this.userLogin}/> */}
                     <Nav.Link style={style} href="/login">Login</Nav.Link>
+                    <Nav.Link style={style} href="/signup">SignUp</Nav.Link>
                 </Navbar>
-
-             
-                <div className="dash-emptyDiv"></div>
 
             </div>
         )

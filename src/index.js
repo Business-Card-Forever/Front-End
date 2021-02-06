@@ -20,6 +20,7 @@ import Events from './components/events/renderedEvents';
 import UserForm from './components/UserForm/UserForm';
 import Portfolio2 from './components/Portfolio2';
 import CreateEvents from './components/eventForm/eventForm';
+import eeeeeee from './components/EventSection/EventSection';
 
 
 
@@ -47,6 +48,8 @@ const routing = (
             <Route exact path="/events" component={Events} /> 
             <Route exact path="/userform" component={UserForm} />
             <Route exact path="/Portfolio2" component={Portfolio2} />
+            <Route exact path="/eeeeeee" component={eeeeeee} />
+            
             
 
             <Route exact path="/eventForm" component={CreateEvents} />

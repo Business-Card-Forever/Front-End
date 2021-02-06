@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
+.main-signup-personally {
+        background-color: #0f3057;
+        width: 550px;
+        height: 1250px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        /* background-image: url('https://i.pinimg.com/originals/d6/fd/c8/d6fdc83f651e1c1460625cd25da61cd0.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; */
+       
+    }
+
+
+.main-signup-company {
+        background-color: #0f3057;
+        width: 550px;
+        height: 1389px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        /* background-image: url('https://i.pinimg.com/originals/d6/fd/c8/d6fdc83f651e1c1460625cd25da61cd0.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; */
+       
+    }
+    
+.signup {
+    width: 76px;
+    height: auto;
+    border-radius: 10%;
+    text-align: center;
+    margin-left: 43%;
+    margin-top: 13px;
+    }
+    
+.un-signup {
+    width: 76%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(232, 239, 243, 0.986);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.157);
+    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    
+    }
+.abrief{
+    
+        width: 76%;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(232, 239, 243, 0.986);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.157);
+        margin-bottom: 50px;
+        text-align: center;
+        margin-bottom: 27px;
+        font-family: 'Ubuntu', sans-serif;
+        
+}
+    
+form.form-signup {
+    text-align:center;
+        padding-top: 40px;
+    }
+    
+.pass1 {
+    width: 76%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(232, 239, 243, 0.986);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.157);
+    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    
+    }
+    
+   
+.un-signup:focus, .pass1:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+        
+    }
+    
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    border: 0;
+    padding-left: 33px;
+    padding-right: 29px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 4%);
+
+    }
+.submit2 {
+    cursor: pointer;
+    border-radius: 5em;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    border: 0;
+    padding-left: 31px;
+    padding-right: 22px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 15px;
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 4%);
+      }
+.div-login{
+    
+}
+.div-register{
+    margin-top: 20px;
+}
+      
+.forgot {
+        text-shadow: 0px 0px 3px rgb(116, 207, 243);
+        color: #E1BEE7;
+        padding-top: 15px;
+    }
+    
+a {
+        text-shadow: 0px 0px 3px rgb(116, 207, 243);
+        color: #E1BEE7;
+        text-decoration: none
+    }
+    
+    @media (max-width: 600px) {
+.main-signup-personally {
+            border-radius: 0px;
+        }
+    }
+
+label{
+    display: block;
+}

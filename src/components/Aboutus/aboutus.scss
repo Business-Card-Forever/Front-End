@@ -34,13 +34,10 @@ background-size: 100%;
 
 img{
   cursor: pointer;
-  border-radius: 5%;
 }
 
 
 .aboutus-pHead{
-background:#FFF7EB;
-// background-image: url(https://i.pinimg.com/originals/63/a1/2d/63a12dca18b4947ce56cd09e87afacb3.png);
 background-position:top;
 background-repeat:no-repeat;
 background-size: 100%;
@@ -134,7 +131,6 @@ text-align: center;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 10%;
 }
 
 .flip-card-front {
@@ -144,7 +140,7 @@ text-align: center;
 }
 
 .flip-card-back {
-  background-color: #e9d3ec;
+  background-color: #CBD1D1;
   color: black;
   transform: rotateY(180deg);
   height: 112%;
@@ -161,11 +157,11 @@ text-align: center;
 
 
 .omar2 {
-background-color: #c0d0d4;
+  color:white;
+background-color: #0f3057;
 font-size: 1.35rem;
 padding: 5% 0% 5% 0%;
 border-radius: 2%;
-// border: black 0.5px solid;
 }
 
 
@@ -200,4 +196,80 @@ color: rgb(78, 76, 76);
 .empty{
     margin-top: 5%;
     
+}
+section .events {
+    margin-left: auto;
+    border-radius: 20px;
+    grid-area: event;
+    background-color: #7a9c9e;
+    box-sizing: border-box;
+    width: 78%;
+    margin-right: auto;
+    // box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    box-shadow: 0 4px 8px 0;
+    background-image: linear-gradient(
+306deg
+, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(
+353deg
+, rgba(81, 81, 81, 13.05) 0%, rgba(81, 81, 81, 0.05) 33.333%,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(
+140deg
+, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(
+189deg
+, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%,rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%,rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(90deg, #09c9ba, #005691);
+}
+section .leftBox .content {
+    color: #fff;
+    background-color: #005691 !important;
+    padding: 40px;
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0;
+background-image: linear-gradient(
+306deg
+, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 33.333%,rgba(85, 85, 85, 0.05) 33.333%, rgba(85, 85, 85, 0.05) 66.666%,rgba(255, 255, 255, 0.05) 66.666%, rgba(255, 255, 255, 0.05) 99.999%),linear-gradient(
+353deg
+, rgba(81, 81, 81, 13.05) 0%, rgba(81, 81, 81, 0.05) 33.333%,rgba(238, 238, 238, 0.05) 33.333%, rgba(238, 238, 238, 0.05) 66.666%,rgba(32, 32, 32, 0.05) 66.666%, rgba(32, 32, 32, 0.05) 99.999%),linear-gradient(
+140deg
+, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 33.333%,rgba(109, 109, 109, 0.05) 33.333%, rgba(109, 109, 109, 0.05) 66.666%,rgba(30, 30, 30, 0.05) 66.666%, rgba(30, 30, 30, 0.05) 99.999%),linear-gradient(
+189deg
+, rgba(77, 77, 77, 0.05) 0%, rgba(77, 77, 77, 0.05) 33.333%,rgba(55, 55, 55, 0.05) 33.333%, rgba(55, 55, 55, 0.05) 66.666%,rgba(145, 145, 145, 0.05) 66.666%, rgba(145, 145, 145, 0.05) 99.999%),linear-gradient(90deg, #09c9ba, #005691);}
+
+section .leftBox .content  h1{
+  color:white;
+
+}
+section .events ul li .time {
+    grid-area: time;
+    position: relative;
+    padding: 8% 40%;
+    background-color: #0f3057;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+}
+.ayshi {
+      background-color: white !important;
+
+  
+}
+.page-event{
+      background-color: white !important;
+  
+}
+.coveren{
+      background-color: white !important;
+  
+}
+.bigContainer{
+background-image: linear-gradient(
+90deg
+,white , white) !important;
+}
+section .events ul li .time {
+  background-image: linear-gradient(
+90deg
+,#0f3057 , #0f3057) !important;
 }
