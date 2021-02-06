@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBInput } from 'mdbreact';
 import './reg.css'
 
-import logo from '../../img/logo.png';
+// import logo from '../../img/logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from '../login/login';
-import SignUp from '../signup/signup';
+// import Login from '../login/login';
+// import SignUp from '../signup/signup';
 // import VedioBG from '../main/main'
-import header from '../header/header'
+// import header from '../header/header'
 const RegistrationForm = () => {
     return (
       <>

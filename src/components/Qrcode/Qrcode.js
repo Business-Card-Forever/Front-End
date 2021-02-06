@@ -1,11 +1,11 @@
-import React, {useState, useRef} from 'react';
-import {Container, Card, CardContent, makeStyles, Grid, TextField, Button} from '@material-ui/core';
+import React, {useState} from 'react';
+import {Container, Card, CardContent, makeStyles, Grid, Button} from '@material-ui/core';
 import QRCode from 'qrcode';
 import Footer from "../footer/footer";
 import Header from "../header/header";
 
 function QrCodeGenerator() { 
-    const [text, setText] = useState('');
+    // const [text, setText] = useState('');
     const [imageUrl, setImageUrl] = useState('');
     const classes = useStyles();
 
