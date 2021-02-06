@@ -9,7 +9,10 @@ background-size: cover;
 .ourss
 {
     font-size: 50px;
-    font-family: 'Boogaloo', cursive;
+    /* font-family: 'Boogaloo', cursive; */
+    color: #0F4C82;
+    font-weight: 900;
+    margin-bottom: 50px;
 }
 
 .features {
@@ -27,8 +30,8 @@ border-radius:12px;
 
 .fig1{
     cursor:pointer;
-    background-color: white;
-    height: 100%;
+    /* background-color: white;
+    height: 100%; */
     border-radius: 10%;
 }
 
@@ -43,10 +46,7 @@ font-size: 4.5rem;
 color: lightblue;
 text-shadow: 5px 5px 30px rgb(109, 121, 111);
 font-family: 'Acme', sans-serif;
-animation-name: repeat2;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-font-weight: lighter;
+
 }
 
 @keyframes repeat2 {
@@ -334,13 +334,13 @@ animation-name: glow-yellow;
     margin-right: auto;
     justify-content: space-evenly */ 
     
-    
-box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-border-radius: 0;
-padding: 50px;
-display: flex;
-flex-wrap: wrap;
-margin-left: auto;
-margin-right: auto;
-justify-content: space-evenly;
+        
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 1%);
+    border-radius: 0;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
   }
