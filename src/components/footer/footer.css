@@ -82,3 +82,7 @@ a.pinterest{
 .span-col{
     margin: 0% 1% 0% 1%;
 }
+.container-div{
+    margin-left: 240px;
+    justify-content: center;
+}
