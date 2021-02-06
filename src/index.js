@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import Dashboard from './components/dashboard/dashboard';
 import Dashboard_c from './components/dashboard_c/dashboard_c';
-import How from './components/HowitWork/how';
+// import How from './components/HowitWork/how';
 import Features from './components/features/features';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
@@ -19,6 +19,9 @@ import About from './components/Aboutus/aboutus';
 import Events from './components/events/renderedEvents';
 import UserForm from './components/UserForm/UserForm';
 import Portfolio2 from './components/Portfolio2';
+import CreateEvents from './components/eventForm/eventForm';
+
+
 
 
 
@@ -30,7 +33,7 @@ const routing = (
             <Route exact path="/" component={App} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/dashboard_c" component={Dashboard_c} />
-            <Route exact path="/how" component={How} />
+            {/* <Route exact path="/how" component={How} /> */}
             <Route exact path="/features" component={Features} />
             <Route exact path="/footer" component={Footer} />
             <Route exact path="/header" component={Header} />
@@ -44,6 +47,10 @@ const routing = (
             <Route exact path="/events" component={Events} /> 
             <Route exact path="/userform" component={UserForm} />
             <Route exact path="/Portfolio2" component={Portfolio2} />
+            
+
+            <Route exact path="/eventForm" component={CreateEvents} />
+
         </Switch>
         
         

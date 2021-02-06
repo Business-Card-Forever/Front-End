@@ -1,5 +1,6 @@
 import React from "react";
 import './events.scss';
+
 import Header from '../header/header';
 import Footer from '../footer/footer';
 
@@ -35,7 +36,9 @@ const Events = props => {
                     <div className="leftBox">
                         <div className="content">
                             <h1>E-BCard Events</h1>
-                            <p className='events-description'>These events can be for large audiences such as conventions and conferences, or smaller events such as retreats, holiday parties or even private</p>
+
+                            <p className='events-description'>A modern and professional, free event and conference website template, ensuring an enviable experience. To push the potential of your upcoming conference to new heights, craft an online presence that will go over and beyond.</p>
+
                         </div>
                     </div>
                     <div className="events">
@@ -64,7 +67,9 @@ const Events = props => {
                 </section>
 
             </div>
+
             <div className='empDiv'> </div>
+
             <Footer />
 
 
