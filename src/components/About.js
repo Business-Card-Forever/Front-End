@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class About extends Component {
   render() {
 
@@ -17,8 +16,6 @@ class About extends Component {
     }
 
     return (
-       <>
-
       <section id="about">
       <div className="row">
          <div className="three columns">
@@ -50,9 +47,6 @@ class About extends Component {
       </div>
 
    </section>
-
-
-   </>
     );
   }
 }

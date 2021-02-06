@@ -3,11 +3,11 @@ import './dashboard.css';
 import placeholder from "../../img/image.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from "react-bootstrap";
-import { ButtonGroup } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faPinterest, faYoutube } from '@fortawesome/free-brands-svg-icons';
+// import { ButtonGroup } from "react-bootstrap";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faFacebook, faTwitter, faInstagram, faPinterest, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Button, Form, Modal, Col, Row, Dropdown } from 'react-bootstrap';
+import { Button, Form, Col, Row} from 'react-bootstrap';
 import Header from '../header/header.js';
 
 import Footer from '../footer/footer';

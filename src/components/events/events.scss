@@ -8,11 +8,10 @@ background-size: cover;
 text-align: center;
 }
 
-
 .coveren {
 background-color: rgb(84, 107, 209);
 height: 360px;
-background-image: url('https://miro.medium.com/max/2420/1*7u_lVL315kKnn4MmUik3zg.gif');
+// background-image: url('https://miro.medium.com/max/2420/1*7u_lVL315kKnn4MmUik3zg.gif');
 background-position: center center;
 background-size: cover;
 margin-bottom: 5%;
@@ -30,7 +29,7 @@ transition: font-size 0.3s;
 }
 
 .heading::first-letter {
-    color: #2c2e31;
+    color: #124957;
 }
 }
 
@@ -68,14 +67,14 @@ margin-left: 8%;
 
 section .leftBox .content {
 color: #fff;
-background-color: rgba(37, 30, 30, 0.5);
+background-color: rgba(33, 93, 121, 0.5);
 padding: 40px;
 transition: 0.5s;
 border-radius: 20px;
 }
 
 section .leftBox .content:hover {
-background-color: #b7b9d3;
+background-color: #5f69f1;
 }
 
 section .leftBox .content h1 {
@@ -93,7 +92,7 @@ padding: 0;
 section .events {
 border-radius: 20px;
 grid-area: event;
-background-color: rgba(0, 0, 0, 0.5);
+background-color: #7a9c9e;
 box-sizing: border-box;
 width: 78%;
 }
@@ -140,7 +139,7 @@ transition: 0.5s;
 }
 
 section .events ul li:hover .time {
-background-color: #a19fc2;
+background-color: #4d56d4;
 }
 
 section .events ul li .time h2 {
@@ -246,3 +245,70 @@ border-color: #e91e63;
     }
 
 }
+
+.events-hosts{
+    font-size: 20px;
+}
+
+.latestE{
+    margin-top: 7%;
+    font-size: 30px;
+    color: #fff;
+    // animation: glitch 1s linear infinite;
+}
+
+
+//   @keyframes glitch{
+//     2%,64%{
+//       transform: translate(2px,0) skew(0deg);
+//     }
+//     4%,60%{
+//       transform: translate(-2px,0) skew(0deg);
+//     }
+//     62%{
+//       transform: translate(0,0) skew(5deg); 
+//     }
+//   }
+  
+//   div:before,
+//   div:after{
+//     content: attr(title);
+//     position: absolute;
+//     left: 0;
+//   }
+  
+//   div:before{
+//     animation: glitchTop 1s linear infinite;
+//     clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+//     -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+//   }
+  
+//   @keyframes glitchTop{
+//     2%,64%{
+//       transform: translate(2px,-2px);
+//     }
+//     4%,60%{
+//       transform: translate(-2px,2px);
+//     }
+//     62%{
+//       transform: translate(13px,-1px) skew(-13deg); 
+//     }
+//   }
+  
+//   div:after{
+//     animation: glitchBotom 1.5s linear infinite;
+//     clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+//     -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+//   }
+  
+//   @keyframes glitchBotom{
+//     2%,64%{
+//       transform: translate(-2px,0);
+//     }
+//     4%,60%{
+//       transform: translate(-2px,0);
+//     }
+//     62%{
+//       transform: translate(-22px,5px) skew(21deg); 
+//     }
+//   }
