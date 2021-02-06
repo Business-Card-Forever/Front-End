@@ -62,7 +62,7 @@ class Header extends React.Component {
             <div className='header' >
 
                 <Navbar bg="dark" variant="dark">
-                    <img src={logo} className="logo" alt="logo" />
+                    <a className="logo" href='/'><img src={logo}  alt="logo" /></a>
 
                     <Nav className="mr-auto">
                         <Nav.Link style={homeStyle} href="/">Home</Nav.Link>

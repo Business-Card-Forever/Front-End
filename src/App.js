@@ -23,7 +23,7 @@ function App() {
 
     <Header />
     {/* <Login/> */}
-
+    {/* <Portfolio2/> */}
 
       {/* <RegistrationForm/> */}
       
