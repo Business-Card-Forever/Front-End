@@ -11,9 +11,9 @@ import QR from './components/Qrcode/Qrcode';
 import PortfoiRege   from "./components/PortfoiRege/PortfoiRege";
 import RegistrationForm from './components/regPage/reg'
 import About from './components/Aboutus/aboutus';
-import Events from './components/events/events';
 import UserForm from './components/UserForm/UserForm';
 import Portfolio2 from './components/Portfolio2';
+import Events from "./components/events/renderedEvents";
 
 
 function App() {
@@ -22,8 +22,9 @@ function App() {
     <div className="App">
 
     <Header />
-    {/* <Login/>
-    <Events/> */}
+    {/* <Login/> */}
+
+
       {/* <RegistrationForm/> */}
       
       <Recent/>

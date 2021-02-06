@@ -15,8 +15,7 @@ background-size:unset;
 
 .logo {
     width: 4%;
-    margin-left: 1%;
-    margin-top: 0.5%;
+    margin: 0.5%;
     float: left;
     cursor: pointer;
 }

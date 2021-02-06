@@ -1,7 +1,7 @@
 import React from "react";
 import './aboutus.scss';
 
-import { Container, Row, Col, Dropdown} from 'react-bootstrap';
+import { Col} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import omar from "../../img/omar.jpg";
@@ -23,7 +23,7 @@ const About = props => {
       </div>
 
         <Col className='aboutus-pHead'>
-        <p className="aboutus-intro">Say Hello To E-BCard Team Members</p>
+        <p className="aboutus-intro">Our Team Members</p>
         </Col>
 
     <figure className='bigfigure'>
