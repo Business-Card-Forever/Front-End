@@ -7,6 +7,7 @@ function Recent(props) {
 
     return (
         <>
+           
             <div className="features-container2">
 
                 <div className='features'>
@@ -90,7 +91,6 @@ function Recent(props) {
 
 
             </div>
-
 
 
         </>

@@ -81,41 +81,8 @@ class Header extends React.Component {
                     <Nav.Link style={style} href="/login">Login</Nav.Link>
                 </Navbar>
 
-                {/* <div className="emptyDiv"> </div>
-
-
-            
-                    <Col className="zoom " xs={12} md={5} xl={5} lg={5}>
-                        <div className='bgText'>
-                        <h2 className="text-center h22">E-BCard</h2>
-                        <h4 className="text-center" > <span> One Business Card </span><br/>Updated, Accessible, Available  <br/> For Ever</h4>
-                        </div>
-                    </Col> */}
-
-
-                {/*                 
-                <Modal show={this.state.loginBtn} centered className="loginModal">
-                    <Modal.Header closeButton onClick={this.handleLoginClose}>
-                        <Modal.Title id="example-modal-sizes-title-lg" className='modalTitle'> Login </Modal.Title>
-                    </Modal.Header>
-
-                    <Modal.Body>
-                        <Login userLogin={this.userLogin} />
-                    </Modal.Body>
-                </Modal>
- */}
-                {/* 
-                <Modal show={this.state.SignUpBtn} centered className="signupModal">
-                    <Modal.Header closeButton onClick={this.handleSignUpClose}>
-                        <Modal.Title id="example-modal-sizes-title-lg" className='modalTitle'> Sign Up </Modal.Title>
-                    </Modal.Header>
-
-                    <Modal.Body>
-                        <SignUp />
-                    </Modal.Body>
-                </Modal> */}
-
-                {/* <div className="dash-emptyDiv"></div> */}
+             
+                <div className="dash-emptyDiv"></div>
 
             </div>
         )
