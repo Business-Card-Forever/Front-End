@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Footer from "../components/footer/footer";
-import Header from "../components/header/header";
 class About extends Component {
   render() {
 
@@ -19,7 +17,6 @@ class About extends Component {
 
     return (
        <>
-           <Header />
 
       <section id="about">
       <div className="row">
@@ -52,7 +49,7 @@ class About extends Component {
       </div>
 
    </section>
-   <Footer />
+
 
    </>
     );

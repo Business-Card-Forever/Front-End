@@ -11,31 +11,26 @@ import QR from './components/Qrcode/Qrcode';
 import PortfoiRege from "./components/PortfoiRege/PortfoiRege";
 import RegistrationForm from './components/regPage/reg'
 import About from './components/Aboutus/aboutus';
-import Events from './components/events/events';
 import UserForm from './components/UserForm/UserForm';
 import Portfolio2 from './components/Portfolio2';
 import { Col } from "react-bootstrap";
+import Events from "./components/events/renderedEvents";
+
 
 function App() {
   return (
     <>
       <div className="App">
-
         <Header />
-
         <Col className="zoom " xs={12} md={5} xl={5} lg={5}>
           <div className='bgText'>
             <h2 className="text-center h22">E-BCard</h2>
             <h4 className="text-center" > <span> One Business Card </span><br />Updated, Accessible, Available  <br /> For Ever</h4>
           </div>
         </Col>
+ <div className="dash-emptyDiv"></div>
 
         
-                       <div className="dash-emptyDiv"></div>
-
-        {/* <Login/>
-    <Events/> */}
-        {/* <RegistrationForm/> */}
         <Features />
         <Recent />
         <How />

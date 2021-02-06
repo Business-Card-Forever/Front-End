@@ -1,11 +1,11 @@
 import React from 'react';
 import './header.css';
 import logo from '../../img/logo.png';
-import { Navbar, Nav, Button, Form, Modal, Col, Row } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Login from '../login/login';
-import SignUp from '../signup/signup';
+// import Login from '../login/login';
+// import SignUp from '../signup/signup';
 
 
 class Header extends React.Component {
