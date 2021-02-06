@@ -6,7 +6,7 @@ import Header from './Header';
 import Footer from './Footer';
 import About from './About';
 import Resume from './Resume';
-import Contact from './Contact';
+// import Contact from './Contact';
 import Portfolio from './Portfolio';
 
 class Portfolio2 extends Component {
@@ -49,7 +49,7 @@ class Portfolio2 extends Component {
         <About data={this.state.resumeData.main}/>
         <Resume data={this.state.resumeData.resume}/>
         <Portfolio data={this.state.resumeData.portfolio}/>
-        <Contact data={this.state.resumeData.main}/>
+        {/* <Contact data={this.state.resumeData.main}/> */}
         <Footer data={this.state.resumeData.main}/>
       </div>
     );
