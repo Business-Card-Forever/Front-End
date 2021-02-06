@@ -88,7 +88,7 @@ class Login extends Component {
             <Header />
             <div className="body-login">
             <div className="main">
-                <img className="sign" align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
+                <img className="sign" alt='img' align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
                 <form className="form1">
                 
                     <input type="text" name="username" className="un" align="center" placeholder="Username"

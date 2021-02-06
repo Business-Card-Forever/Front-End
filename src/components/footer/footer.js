@@ -7,8 +7,13 @@ import './footer.css';
 const Footer = props => {
     return (
         <>
+        
+
+        
             <Container fluid className="footer">
+
                 <Container fluid>
+                <div className='container-div'>
                     <Row>
                         <Col xs={12} md={12} xl={12} lg={12} className="social-media justify-content-center text-center">
                             <p className="follow">Follow us on:</p>
@@ -26,8 +31,10 @@ const Footer = props => {
                             <p className="rights">Email: info@E-BCard.com <span className="span-col">|</span> Phone: +962-788703716 <br/> Copyright ©2021 Reserved For E-BCard Team</p>
                         </Col>
                     </Row>
+                    </div>
                 </Container>
             </Container>
+          
         </>
     )
 }

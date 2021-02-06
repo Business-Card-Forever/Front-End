@@ -16,7 +16,7 @@ import Recent from './components/recent/recent';
 import SignUp from './components/signup/signup';
 import RegPage from './components/regPage/reg';
 import About from './components/Aboutus/aboutus';
-import Events from './components/events/events';
+import Events from './components/events/renderedEvents';
 import UserForm from './components/UserForm/UserForm';
 import Portfolio2 from './components/Portfolio2';
 import CreateEvents from './components/eventForm/eventForm';

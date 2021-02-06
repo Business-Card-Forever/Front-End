@@ -1,9 +1,10 @@
 import React from "react";
-import Recent from "./recentRendered";
+
+import Events from "./events";
 
 
 
-class GetData extends React.Component {
+class GetEvents extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -11,34 +12,35 @@ class GetData extends React.Component {
         }
     }
 
-
     componentDidMount() {
         this.renderMyData();
     }
 
     renderMyData(){
-        fetch(`http://e-bcard.herokuapp.com/api/userinfo/`, {
+        fetch(`http://e-bcard.herokuapp.com/company_api/companyevents/`, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
         })
             .then((response) => response.json())
             .then((responseJson) => {
-                let last5 = responseJson.slice(Math.max(responseJson.length - 5, 0))
-                this.setState({ data : last5 })
+                let last10 = responseJson.slice(Math.max(responseJson.length - 5, 1))
+                console.log(last10);
+                this.setState({ data : responseJson })
             })
             .catch((error) => {
                 console.error(error);
             });
             
     }
+
 render(){
     return(
         <>
-        {this.state.data ? <Recent data={this.state.data} /> : <h1>Loding</h1> }
+        {this.state.data ? <Events info={this.state.data} /> : <h1>Loading</h1> }
         </>
     );
 }
 }
 
 
-export default GetData;
+export default GetEvents;

@@ -8,7 +8,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 // import Portfolio2 from './components/Portfolio2';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // const Date = () => {
 //     const [startDate, setStartDate] = useState(new Date());
 //     return (
@@ -56,9 +56,10 @@ function FormU(props){
                         <div className='Container'>
                             <Row style={{borderStyle: 'none none solid none' ,borderColor:'#F5F5F5' , borderWidth:'1px' , marginRight:'5%'}} >
                             <h1> Edit my profile</h1>
-                            <Button className='b1' variant="primary" >View Your Portfolio</Button>
+                            
+                            <Button className='b1' variant="primary" ><Link to="/Portfolio2">View Your Portfolio</Link></Button>
                             {/* onClick={this.handleModal} */} 
-                            {/* <Link to="/Portfolio2"></Link> */}
+                            
                             </Row>
 
                             <br></br>
@@ -122,7 +123,7 @@ function FormU(props){
                                         </Form.Row>
 
                                             <Button variant="primary" type="submit">
-                                                Submit
+                                                Save
                                             </Button><br></br><br></br><br></br>
                                 </Form>
                                 
