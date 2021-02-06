@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Footer from "../footer/footer";
-import Header from "../header/header";
+import Footer from "../components/footer/footer";
+import Header from "../components/header/header";
 class About extends Component {
   render() {
 

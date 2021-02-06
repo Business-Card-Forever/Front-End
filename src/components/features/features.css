@@ -15,21 +15,11 @@ margin-top: 5%;
 figcaption{
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-.our{
-font-size: 4.5rem;
-color: lightblue;
-text-shadow: 5px 5px 30px rgb(109, 121, 111);
-font-family: 'Acme', sans-serif;
-animation-name: repeat;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-font-weight: lighter;
-}
 
-@keyframes repeat {
+/* @keyframes repeat {
 
 0% {color: lightblue; text-shadow: 5px 5px 30px lightblue;}
 20% {color: #45aaf2; text-shadow: 5px 5px 30px  #45aaf2;}
@@ -37,17 +27,20 @@ font-weight: lighter;
 60% {color: #4b7bec; text-shadow: 5px 5px 30px  #2d98da;}
 80% {color: #3867d6; text-shadow: 5px 5px 30px  #3867d6;}
 100% {color: lightblue; text-shadow: 5px 5px 30px  lightblue;}
-}
+} */
+
 
 .features2 {
-    margin-left: auto;
+    /* margin-left: auto; */
     /* background-color: black; */
-    background-image: linear-gradient( 109.5deg,  rgba(76,221,242,1) 11.2%, rgba(92,121,255,1) 91.1% );
+    /* background-image: linear-gradient( 109.5deg,  #0F4C82 11.2%, #83B7CD 91.1% ); */
     text-align: center;
+    background-color: #4181AD;
     border-radius: 5px;
-    width: 80%;
-    margin-right: auto;
-    box-shadow: 0 5px 25px rgb(0 0 0 / 59%);
+    color: #fff;
+    /* width: 80%; */
+    /* margin-right: auto; */
+    /* box-shadow: 0 5px 25px rgb(0 0 0 / 59%); */
 }
 
 
@@ -74,26 +67,26 @@ margin: 20px;
 #glow-blue {
 animation-name: glow-blue;
 }
-@keyframes glow-blue {
+/* @keyframes glow-blue {
 from {
     box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
 }
 to {
     box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
 }
-}
+} */
 
 #glow-green {
 animation-name: glow-green;
 }
-@keyframes glow-green {
+/* @keyframes glow-green {
 from {
     box-shadow: 0 0 2px #82d8f9, 0 0 10px #82d8f9, 0 0 20px #00a6fb, 0 0 30px #00a6fb;
 }
 to {
     box-shadow: 0 0 10px #82d8f9, 0 0 20px #5ec9fe, 0 0 30px #5ec9fe, 0 0 40px #5ec9fe;
 }
-}
+} */
 
 
 
@@ -146,6 +139,9 @@ animation-name: glow-yellow;
     transition: 800ms;
 
 } */
+.one{
+    
+}
 
 .empty{
     /* margin-top: 5%; */

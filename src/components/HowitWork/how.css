@@ -3,5 +3,20 @@
 }
 
 .features-container3{
-    background-color: white;
+    background-color: #83B7CD;
+    margin-top: -80px;
+}
+.howWork{
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#textEvent1,#textEvent2,#textEvent3,#textEvent4,#textEvent5,#textEvent6,#textEvent7{
+    width: 50%;
+    max-width: 500px;
+    border-radius: 5px;
+
 }

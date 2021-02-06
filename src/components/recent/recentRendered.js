@@ -8,14 +8,16 @@ function Recent (props) {
         return (
             <>
 
+                      
 
                     <div className="features-container2">
-        
-                        <div className='features'>
+                    <div className='features'>
                             <h1 className='ourss'>Recent Applicants</h1>
                         </div>
+                     <div>
                         {/* saleh work  */}
                         <div className="flexthe-cards">
+                        
                         <div className="cards-app">
                             <div className="pcard">
                                 <img className='profile-bg profile-bg-again' src="https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVpbGRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"></img>
@@ -90,75 +92,7 @@ function Recent (props) {
         
                     </div>
         
-
-
-
-
-            {/* <div className="features-container2">
-
-                <div className='features'>
-                    <h1 className='our'>Recent Applicants</h1>
-                </div>
-
-                <div className='features2'>
-                    <div className="demo-container">
-                        <div className="demo-box2" id="glow-blue">
-
-
-                            <figure className='fig1'>
-                                <img className='one' src={portfolio} />
-                                <figcaption className='figcaption2'><br></br>
-                                {props.data[4].username}
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div className="demo-box2 two" id="glow-green">
-                            <figure className='fig1'>
-                                <img src={portfolio} />
-                                <figcaption className='figcaption2'><br></br>
-                                {props.data[3].username}
-                                </figcaption>
-                            </figure>
-
-                        </div>
-
-                        <div className="demo-box2 three" id="glow-red">
-                            <figure className='fig1'>
-                                <img src={portfolio} />
-                                <figcaption className='figcaption2'><br></br>
-                                {props.data[2].username}
-                                </figcaption>
-                            </figure>
-                        </div>
                     </div>
-
-
-                    <div className="demo-box2 second2 four" id="glow-pink">
-                        <figure className='fig1'>
-                            <img src={portfolio} />
-                            <figcaption className='figcaption2'><br></br>
-                            {props.data[1].username}
-                            </figcaption>
-                        </figure>
-
-                    </div>
-
-                    <button className="glow-on-hover" type="button">Create Your Own</button>
-
-                    <div className="demo-box2 second2 five" id="glow-yellow">
-                        <figure className='fig1'>
-                            <img src={portfolio} />
-                            <figcaption className='figcaption2'><br></br>
-                            {props.data[0].username}
-                            </figcaption>
-                        </figure>
-                    </div>
-                <div className='empty'></div>
-
-                </div>
-
-            </div> */}
 
         </>
         )
