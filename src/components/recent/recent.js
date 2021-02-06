@@ -1,87 +1,44 @@
 import React from "react";
-import './recent.css';
-import portfolio from '../../img/portfolio.png'
-import SignUpBtn from '../header/header'
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import Recent from "./recentRendered";
 
 
-class Recent extends React.Component {
+
+class GetData extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            modalBtn: false,
+            data : null,
         }
     }
 
-    render() {
 
-        return (
-            <div className="features-container2">
-
-                <div className='features'>
-                    <h1 className='our'>Recent Applicants</h1>
-                </div>
-
-                <div className='features2'>
-                    <div class="demo-container">
-                        <div class="demo-box2" id="glow-blue">
-                            <figure className='fig1'>
-                                <img className='one' src={portfolio} />
-                                <figcaption className='figcaption2'><br></br>
-                                Hadeel Hussam
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <div class="demo-box2 two" id="glow-green">
-                            <figure className='fig1'>
-                                <img src={portfolio} />
-                                <figcaption className='figcaption2'><br></br>
-                                Aghyad Albalkhi
-                                </figcaption>
-                            </figure>
-
-                        </div>
-
-                        <div class="demo-box2 three" id="glow-red">
-                            <figure className='fig1'>
-                                <img src={portfolio} />
-                                <figcaption className='figcaption2'><br></br>
-                                Momayaz Aldoos
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-
-
-                    <div class="demo-box2 second2 four" id="glow-pink">
-                        <figure className='fig1'>
-                            <img src={portfolio} />
-                            <figcaption className='figcaption2'><br></br>
-                            Dana Kiswani
-                            </figcaption>
-                        </figure>
-
-                    </div>
-
-                    <button class="glow-on-hover" type="button">Create Your Own</button>
-
-                    <div class="demo-box2 second2 five" id="glow-yellow">
-                        <figure className='fig1'>
-                            <img src={portfolio} />
-                            <figcaption className='figcaption2'><br></br>
-                            Omar Zain
-                            </figcaption>
-                        </figure>
-                    </div>
-                <div className='empty'></div>
-
-                </div>
-
-            </div>
-
-        )
+    componentWillMount() {
+        this.renderMyData();
     }
+
+    renderMyData(){
+        fetch(`https://e-bcard.herokuapp.com/api/users/`, {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+        })
+            .then((response) => response.json())
+            .then((responseJson) => {
+                let last5 = responseJson.slice(Math.max(responseJson.length - 5, 0))
+                this.setState({ data : last5 })
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+            
+    }
+render(){
+    return(
+        <>
+        {this.state.data ? <Recent data={this.state.data} /> : <h1>Loding</h1> }
+        </>
+    );
+}
 }
 
-export default Recent;
+
+export default GetData;

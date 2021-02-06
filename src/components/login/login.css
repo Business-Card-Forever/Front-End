@@ -1,85 +1,133 @@
-.form-dark .font-small {
-    font-size: 0.8rem; }
-  
-.form-dark [type="radio"] + label,
-.form-dark [type="checkbox"] + label {
-    font-size: 0.8rem; }
-  
-.form-dark [type="checkbox"] + label:before {
-    top: 2px;
-    width: 15px;
-    height: 15px; }
-  
-.form-dark .md-form label {
-    color: rgb(216, 216, 216); }
-  
-.form-dark input[type=text]:focus:not([readonly]) {
-    border-bottom: 1px solid #00C851;
-    -webkit-box-shadow: 0 1px 0 0 #00C851;
-    box-shadow: 0 1px 0 0 #00C851; }
-  
-.form-dark input[type=text]:focus:not([readonly]) + label {
-    color: #fff; }
-  
-.form-dark input[type=password]:focus:not([readonly]) {
-    border-bottom: 1px solid #00C851;
-    -webkit-box-shadow: 0 1px 0 0 #000000;
-    box-shadow: 0 1px 0 0 #00C851; }
-  
-.form-dark input[type=password]:focus:not([readonly]) + label {
-    color: #fff; }
-  
-.form-dark input[type="checkbox"] + label:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 17px;
-    height: 17px;
-    z-index: 0;
-    border: 1.5px solid #fff;
-    border-radius: 1px;
-    margin-top: 2px;
-    -webkit-transition: 0.2s;
-    transition: 0.2s; }
-  
-.form-dark input[type="checkbox"]:checked + label:before {
-    top: -4px;
-    left: -3px;
-    width: 12px;
-    height: 22px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: transparent #00c851 #00c851 transparent;
-    -webkit-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
-    transform: rotate(40deg);
-    -webkit-backface-visibility: hidden;
-    -webkit-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
-    transform-origin: 100% 100%; } 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-.login-container{
-        margin-right: -3250px;
-        margin-top: 270px;
-        /* background-image: url('https://i.pinimg.com/originals/ae/48/66/ae4866824012b855e82a358960c1d0d6.jpg'); */
+
+.main {
+        background-color: #FFFFFF;
+        width: 400px;
+        height: 400px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        background-image: url('https://i.pinimg.com/originals/d6/fd/c8/d6fdc83f651e1c1460625cd25da61cd0.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-    }    
-.btn-success {
-        color: #fff;
-        background-color: #003baa;
-        border-color: #28a7a7;
+       
     }
-
-
-
-
-
-
-
-
-
-
-
     
+.sign {
+    width: 76px;
+    height: auto;
+    border-radius: 10%;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 13px;
+    }
+    
+.un {
+    width: 76%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(232, 239, 243, 0.986);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.157);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+form.form1 {
+        padding-top: 40px;
+    }
+    
+.pass {
+    width: 76%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgb(232, 239, 243);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.157);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+    
+   
+.un:focus, .pass:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+        
+    }
+    
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    border: 0;
+    padding-left: 33px;
+    padding-right: 29px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 4%);
+
+    }
+.submit2 {
+    cursor: pointer;
+    border-radius: 5em;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    border: 0;
+    padding-left: 31px;
+    padding-right: 22px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    margin-top: 10px;
+    font-size: 15px;
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 4%);
+      }
+.div-login{
+    
+}
+.div-register{
+    margin-top: 20px;
+}
+      
+.forgot {
+        text-shadow: 0px 0px 3px rgb(116, 207, 243);
+        color: #E1BEE7;
+        padding-top: 15px;
+    }
+    
+a {
+        text-shadow: 0px 0px 3px rgb(116, 207, 243);
+        color: #E1BEE7;
+        text-decoration: none
+    }
+    
+    @media (max-width: 600px) {
+.main {
+            border-radius: 0px;
+        }
+    }

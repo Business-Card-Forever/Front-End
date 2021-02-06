@@ -37,7 +37,7 @@ const About = props => {
            <h2 className="omar2">Aghead Albalkhe</h2> 
            </div>
            <div class="flip-card-back">
-           <p>my name is Mohammed Aghead Albalkhe, I'm a Web Developer | Freelancer | Entrepreneur | Technical Mentor| Blockchain Developer.</p> 
+           <p className='aboutp'>my name is Mohammed Aghead Albalkhe, I'm a Web Developer | Freelancer | Entrepreneur | Technical Mentor| Blockchain Developer.</p> 
             <a href="https://www.linkedin.com/in/magheadalbalkhe/" target='_blank' rel="noopener noreferrer" className="linkedIn a-social"> <FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
             <a href="https://github.com/aghyadalbalkhi-ASAC" target='_blank' rel="noopener noreferrer" className="github a-social"> <FontAwesomeIcon icon={faGithub} size="2x" /></a>
         </div>
@@ -55,7 +55,7 @@ const About = props => {
            <h2 className="omar2">Omar Zain</h2> 
            </div>
            <div class="flip-card-back"> 
-           <p>My name is Omar Zain. I'm a Civil Engineering gradutae and I'm a Full-Stack Developer.</p> 
+           <p className='aboutp'>My name is Omar Zain. I'm a Civil Engineering gradutae and I'm a Full-Stack Developer.</p> 
             <a href="https://www.linkedin.com/in/omar-zain/" target='_blank' rel="noopener noreferrer" className="linkedIn a-social"> <FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
             <a href="https://github.com/omarXzain"  target='_blank' rel="noopener noreferrer" className="github a-social"> <FontAwesomeIcon icon={faGithub} size="2x" /></a>
         </div>
@@ -70,7 +70,7 @@ const About = props => {
               <h2 className="omar2">Momayaz Aldoos</h2> 
               </div>
               <div class="flip-card-back">
-              <p>Hello all my name is Momayaz Aldoos I'm a Software Developer, And a translator.</p> 
+              <p className='aboutp'>Hello all my name is Momayaz Aldoos I'm a Software Developer, And a translator.</p> 
                 <a href="https://www.linkedin.com/in/momayaz-al-doos-8b37051b5/" target='_blank' rel="noopener noreferrer" className="linkedIn a-social"> <FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
                 <a href="https://github.com/Momayaz" target='_blank' rel="noopener noreferrer" className="github a-social"> <FontAwesomeIcon icon={faGithub} size="2x" /></a>
             </div>
@@ -89,7 +89,7 @@ const About = props => {
            <h2 className="omar2">Hadeel Hussam</h2> 
            </div>
            <div class="flip-card-back">
-           <p>my name is Hadeel Hussam and i'm a Full Stack Developer with a Software-engineering background</p> 
+           <p className='aboutp'>my name is Hadeel Hussam and i'm a Full Stack Developer with a Software-engineering background</p> 
             <a href="https://www.linkedin.com/in/hadeel-hhawajreh98/" target='_blank' rel="noopener noreferrer" className="linkedIn a-social"> <FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
             <a href="https://github.com/hadeelhhawajreh" target='_blank' rel="noopener noreferrer" className="github a-social"> <FontAwesomeIcon icon={faGithub} size="2x" /></a>
         </div>
@@ -106,7 +106,7 @@ const About = props => {
            <h2 className="omar2">Dana Kiswani</h2> 
            </div>
            <div class="flip-card-back">
-           <p>My name is Dana Kiswani, I am a Full-Stack Developer, with a Software-engineering background.</p> 
+           <p className='aboutp'>My name is Dana Kiswani, I am a Full-Stack Developer, with a Software-engineering background.</p> 
             <a href="https://www.linkedin.com/in/dana-abdehwahab/" target='_blank' rel="noopener noreferrer" className="linkedIn a-social"> <FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
             <a href="https://github.com/Dana-Kiswani" target='_blank' rel="noopener noreferrer" className="github a-social"> <FontAwesomeIcon icon={faGithub} size="2x" /></a>
         </div>

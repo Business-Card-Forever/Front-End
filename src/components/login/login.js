@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
+import './login.css';
+import Footer from "../footer/footer";
+import Header from "../header/header";
 
 
 class Login extends Component {
@@ -83,30 +86,29 @@ class Login extends Component {
             return <Redirect to={this.state.redirect} />
         }
         return (
-            <div>
-                <h1> login user form</h1>
-                <lable>
-                    Username:
-                    <input type="text" name="username"
+            <>
+            <Header />
+            <div className="body-login">
+            <div className="main">
+                <img className="sign" align="center" src="https://play-lh.googleusercontent.com/nJcgTrETflv8liaA-3zrv7po7NyfKDMpMswbazxx6oWGnNAzT4D1mPniyX0nOrE-YnaV"/>
+                <form className="form1">
+                
+                    <input type="text" name="username" className="un" align="center" placeholder="Username"
                     value={this.state.credentials.username} 
                     onChange={this.inputChanged}/>
-                </lable>
-                <br/>
-                <lable>
-                    Password : 
-                    <input type="password" name="password"
+                    <input type="password" name="password" className="pass" align="center" placeholder="Password"
                     value={this.state.credentials.password} 
                     onChange={this.inputChanged}/>
-                </lable>
-                <br/>
-                <button onClick={this.login}>Login</button>
-                <button onClick={this.register}>Register</button>
+
+                <div className="div-login"><a onClick={this.login} className="submit" align="center">Login</a></div>
+                <div className="div-register"><a onClick={this.register} className="submit2" align="center">Register</a></div>
+                </form>
             </div>
+            </div>
+            <Footer />
+            </>
         );
     }
 }
 
 export default Login;
-
-
-
