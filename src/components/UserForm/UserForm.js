@@ -65,7 +65,7 @@ function FormU(props){
                             <h4> Introduction</h4>
                             <br></br>
                             <Row>
-                                <div>Let the Coursera community of other learners and instructors recognize you.</div>
+                                <div>Let Us Know More Info About you.</div>
                             </Row><br></br>   
 
 {/* *************************************General Experience *********************************************/}
@@ -229,20 +229,21 @@ class UserForm extends React.Component {
         super(props);
         this.state = {
             data : null,
-            work_data:'',
-            edu_data:'',
+            work_data:[],
+            edu_data:[],
         }
     }
-    componentWillMount() {
+    componentDidMount() {
         this.renderMyData(false);
-        console.log('componentWillMount')
+        console.log('From user componentDidMount')
         console.log(this.state.update)
     }
     renderMyData(stop){
+        console.log('From user renderMyData')
 
         /////////////////////// User Info/////////////////////////////
         let user_id = localStorage.getItem('userinfo');
-        fetch(`http://127.0.0.1:8000/api/userinfo/${user_id}`)
+        fetch(`https://e-bcard.herokuapp.com/api/userinfo/${user_id}`)
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({ data : responseJson })
@@ -255,6 +256,7 @@ class UserForm extends React.Component {
         fetch(`http://e-bcard.herokuapp.com/api/workexperience/`)
             .then((response) => response.json())
             .then((responseJson) => {
+                console.log(responseJson)
                 this.setState({ work_data : responseJson })
             })
             .catch((error) => {
@@ -278,10 +280,11 @@ class UserForm extends React.Component {
         return true;
     }
     componentDidUpdate() {
-        console.log('aghyad')
+        console.log('From user componentDidUpdate')
     }
 
     render() {
+        console.log(this.state.work_data)
     return(
         <>
         {this.state.data ? <FormU data={this.state.data} work_data={this.state.work_data} edu_data={this.state.edu_data} /> : <h1>Loading ....</h1> }

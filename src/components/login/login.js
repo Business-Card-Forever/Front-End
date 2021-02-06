@@ -32,15 +32,13 @@ class Login extends Component {
         ).catch(error => console.log("here",error));
 
         ///////////// Get User ID///////////////////////////////
-        fetch('http://127.0.0.1:8000/api/users/',{
+        fetch('https://e-bcard.herokuapp.com/api/users/',{
             method:'GET',
             headers:{'Content-Type':'application/json'},
         })
         .then(data =>data.json())
         .then(
             data => {
-                // console.log(data);
-
                 data.map(user => {
                     if (user.username ==this.state.credentials.username){
                         localStorage.setItem('user_id', user.id);

@@ -22,7 +22,7 @@ class GetData extends React.Component {
             update:false,
         }
     }
-    componentWillMount() {
+    componentDidMount() {
         this.renderMyData(false);
         console.log('componentWillMount')
         console.log(this.state.update)
@@ -31,7 +31,7 @@ class GetData extends React.Component {
         if(!stop){
             console.log('here')
 
-        fetch(`http://127.0.0.1:8000/api/userinfo/`)
+        fetch(`https://e-bcard.herokuapp.com/api/userinfo/`)
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({ data : responseJson })
@@ -186,10 +186,7 @@ class Dashboard extends React.Component {
 
                     </Row>
 
-                </Container>
-
-
-                            
+                </Container>     
                                 <Footer />
 
             </>
