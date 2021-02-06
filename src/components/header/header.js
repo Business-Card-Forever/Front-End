@@ -80,8 +80,6 @@ class Header extends React.Component {
                     {/* <Login userLogin={this.userLogin}/> */}
                     <Nav.Link style={style} href="/login">Login</Nav.Link>
                 </Navbar>
-
-             
                 <div className="dash-emptyDiv"></div>
 
             </div>
