@@ -29,18 +29,13 @@ class How extends React.Component {
                     <Timeline>
       <Events>
         <TextEvent  id='textEvent5' date="# 1" text="# Sign up as a user" style={{width:'50%' }} />
-
-        
-        <TextEvent id='textEvent4' date="# 2" text="# Create your Own Portofilo"/>
-
-        
-        <TextEvent id='textEvent6'  date="# 3" text="# Share Your Portfoilo and make your connections "/>
-        <TextEvent id='textEvent7'  date="# 4" text="# Stay Tund to attend the Up coming events "/>
+        <TextEvent id='textEvent4' date="# 2" text="# Create your Own Portfolio"/>
+       
+        <TextEvent id='textEvent6'  date="# 3" text="# Share Your Portfolio and make your connections "/>
+        <TextEvent id='textEvent7'  date="# 4" text="# Stay Tuned to attend the Upcoming events "/>
       </Events>
-     
-
     </Timeline>
-  <br></br><br></br><br></br><br></br> 
+  <br></br><br></br><br></br>
     <Timeline>
     <TextEvent  id='textEvent1'  date="# 1" text="# Sign up as a Company"/>
     

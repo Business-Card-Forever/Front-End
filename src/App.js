@@ -29,8 +29,6 @@ function App() {
           </div>
         </Col>
  <div className="dash-emptyDiv"></div>
-
-        
         <Features />
         <Recent />
         <How />
