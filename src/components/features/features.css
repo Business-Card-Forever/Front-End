@@ -15,7 +15,7 @@ margin-top: 5%;
 figcaption{
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 15.5px;
 }
 
 
@@ -54,8 +54,8 @@ height: auto;
 margin: 50px auto;
 }
 .demo-box {
-width: 270px;
-height: 270px;
+width: 225px;
+height: 225px;
 display: inline-block;
 border-radius: 12px;
 margin: 20px;
@@ -139,8 +139,8 @@ animation-name: glow-yellow;
     transition: 800ms;
 
 } */
-.one{
-    
+.onee{
+   border-radius: 8px;
 }
 
 .empty{

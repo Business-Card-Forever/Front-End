@@ -106,3 +106,53 @@ h1, h4{
 	background-color: #FFF;
 	color: #04243D;
 }
+
+
+
+
+
+
+.onix1{
+
+	transition: 500ms;
+
+}
+
+.onix2{
+
+	transition: 500ms;
+
+
+}
+
+.onix3{
+
+	transition: 500ms;
+
+
+}
+
+
+
+
+.onix1:hover{
+	border: #FFF 2px solid;
+	transition: 500ms;
+	border-radius: 0px 9px 0px 9px;
+	font-size: 21px;
+}
+
+.onix2:hover{
+	border: #FFF 2px solid;
+	transition: 500ms;
+	border-radius: 0px 9px 0px 9px;
+	font-size: 21px;
+}
+
+.onix3:hover{
+	border: #FFF 2px solid;
+	transition: 500ms;
+	border-radius: 0px 9px 0px 9px;
+	font-size: 21px;
+
+}
