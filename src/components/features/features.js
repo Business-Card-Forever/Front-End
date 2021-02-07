@@ -70,7 +70,7 @@ class Features extends React.Component {
                         <figure className='fig5'>
                             <img className='onee' src={py5} />
                             <figcaption><br></br>
-                            <h2 className='hv'>Updated Forever</h2>
+                            Updated Forever
                             </figcaption>
                         </figure>
                     </div>
