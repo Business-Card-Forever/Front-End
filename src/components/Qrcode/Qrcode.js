@@ -17,7 +17,16 @@ function QrCodeGenerator() {
         var text_id = localStorage.getItem('user_id');
 
     try {
-        const response = await QRCode.toDataURL(text_id);
+        const response = await QRCode.toDataURL(`{
+            "id": 9,
+            "full_name": "rand alslaq",
+            "userinfo": 25,
+            "birthday": "2021-02-06",
+            "city": "irbid1",
+            "email": "randw@gmail.com",
+            "aboutme": "Rannnnnd1",
+            "major": "IT"
+        }`);
         setImageUrl(response);
     }catch (error) {
         console.log(error);

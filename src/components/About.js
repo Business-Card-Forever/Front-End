@@ -3,15 +3,13 @@ class About extends Component {
   render() {
 
     if(this.props.data){
-      var name = this.props.data.name;
+      var name = this.props.userinfo_data.full_name;
       var profilepic= "images/"+this.props.data.image;
-      var bio = this.props.data.bio;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone= this.props.data.phone;
-      var email = this.props.data.email;
+      var birthday = this.props.userinfo_data.birthday;
+      var city = this.props.userinfo_data.city;
+      var aboutme = this.props.userinfo_data.aboutme;
+
+      var email = this.props.userinfo_data.email;
       var resumeDownload = this.props.data.resumedownload;
     }
 
@@ -24,17 +22,17 @@ class About extends Component {
          <div className="nine columns main-col">
             <h2>About Me</h2>
 
-            <p>{bio}</p>
+            <p>{aboutme}</p>
             <div className="row">
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
-						   <span>Name: </span><br />
-						   <span>City: <br />
+						   <span>Name: {name} </span><br />
+						   <span>City: {city} <br />
 
                    </span>
-                   <br /><span>phone: </span><br />
-                     <span>Email: </span>
+                   <br /><span>phone: 0785144005</span><br />
+                     <span>Email: {email}</span>
 					   </p>
                </div>
                <div className="columns download">

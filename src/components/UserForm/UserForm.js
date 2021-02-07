@@ -43,7 +43,6 @@ function FormU(props){
             }  
         })
         console.log(edu_data)
-
     return(
         <>
             <Header />
@@ -58,7 +57,7 @@ function FormU(props){
                             <Row style={{borderStyle: 'none none solid none' ,borderColor:'#F5F5F5' , borderWidth:'1px' , marginRight:'5%'}} >
                             <h1> Edit my profile</h1>
                             
-                            <Button className='b1' variant="primary" ><Link to="/Portfolio2">View Your Portfolio</Link></Button>
+                            <Button className='b1' variant="primary" > <Link to='/Portfolio2'>View Your Portfolio</Link>   </Button>
                             {/* onClick={this.handleModal} */} 
                             
                             </Row>
