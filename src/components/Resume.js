@@ -14,7 +14,10 @@ class Resume extends Component {
   render() {
 
     if(this.props.data){
-      var skillmessage = this.props.data.skillmessage;
+      var birthday = this.props.userinfo_data.birthday;
+      var email =this.props.userinfo_data.email
+      var city =this.props.userinfo_data.city
+      var major =this.props.edu_data_data.degree
       var education = this.props.data.education.map(function(education){
         return <div key={education.school}><h3>{education.school}</h3>
         <p className="info">{education.degree} <span>&bull;</span><em className="date">{education.graduated}</em></p>
@@ -44,10 +47,10 @@ class Resume extends Component {
 
       <div className="row education">
          <div className="three columns header-col">
-            <h1><span>Major</span>: </h1>
+            <h1><span>Major : {major}</span>: </h1>
          </div>
          <div className="nine columns main-col">
-         <h1><span>Birthday: </span></h1>
+         <h1><span>Birthday: {birthday}  </span></h1>
         </div>
 
       </div>
@@ -56,11 +59,11 @@ class Resume extends Component {
       <div className="row work">
 
          <div className="three columns header-col">
-            <h1><span>Email</span></h1>
+            <h1><span>Email : {email}</span></h1>
          </div>
          <br/>
          <div >
-            <h1><span>City :</span></h1>
+            <h1><span>City : {city}</span></h1>
          </div>
 
     </div>
