@@ -19,7 +19,7 @@ class Features extends React.Component {
         return (
             <div className="features-container">
 
-              
+            
 
                 <div className='features2'>
 
@@ -67,10 +67,10 @@ class Features extends React.Component {
                     </div>
 
                     <div class="demo-box second five" id="glow-yellow">
-                        <figure>
-                            <img className='one' src={py1} />
+                        <figure className='fig5'>
+                            <img className='onee' src={py5} />
                             <figcaption><br></br>
-                            Updated Forever
+                            <h2 className='hv'>Updated Forever</h2>
                             </figcaption>
                         </figure>
                     </div>

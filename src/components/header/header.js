@@ -65,9 +65,9 @@ class Header extends React.Component {
                     <a className="logo" href='/'><img src={logo}  alt="logo" /></a>
 
                     <Nav className="mr-auto">
-                        <Nav.Link style={homeStyle} href="/">Home</Nav.Link>
-                        <Nav.Link style={style} href="/aboutus">About Us</Nav.Link>
-                        <Nav.Link style={style} href="/events">Events</Nav.Link>
+                        <Nav.Link style={homeStyle} href="/" ><p className='onix1'>Home</p></Nav.Link>
+                        <Nav.Link style={style} href="/aboutus"><p className='onix2'>About Us</p></Nav.Link>
+                        <Nav.Link style={style} href="/events"><p className='onix3'>Events</p></Nav.Link>
                     </Nav>
 
                     {/* <Form className="loginBtn">

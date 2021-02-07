@@ -25,7 +25,7 @@ function App() {
         <Col className="zoom " xs={12} md={5} xl={5} lg={5}>
           <div className='bgText'>
             <h2 className="text-center h22">E-BCard</h2>
-            <h4 className="text-center" > <span> One Business Card </span><br />Updated, Accessible, Available  <br /> For Ever</h4>
+            <h3 className="text-center" > <span> One Business Card </span><br />Updated, Accessible, Available  <br /> For Ever</h3>
           </div>
         </Col>
  <div className="dash-emptyDiv"></div>
